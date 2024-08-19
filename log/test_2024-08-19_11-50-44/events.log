@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000134] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict([('custom_interfaces', '/home/yanwen/ros2_tutorials/install/custom_interfaces')])}
+[0.000156] (ros2_tutorials_cpp) JobQueued: {'identifier': 'ros2_tutorials_cpp', 'dependencies': OrderedDict([('ros2_tutorials_cpp', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp')])}
+[0.000168] (ros2_tutorials_py) JobQueued: {'identifier': 'ros2_tutorials_py', 'dependencies': OrderedDict([('ros2_tutorials_py', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py')])}
+[0.000180] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.005800] (ros2_tutorials_cpp) JobStarted: {'identifier': 'ros2_tutorials_cpp'}
+[0.008533] (ros2_tutorials_py) JobStarted: {'identifier': 'ros2_tutorials_py'}
+[0.099624] (-) TimerEvent: {}
+[0.191022] (ros2_tutorials_py) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_SG:en', 'USER': 'yanwen', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yanwen/ros2_tutorials/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yanwen', 'OLDPWD': '/home/yanwen', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1458', 'SYSTEMD_EXEC_PID': '1635', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7958', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yanwen/ros2_tutorials/install:/home/yanwen/gazebo_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yanwen', 'JOURNAL_STREAM': '8:16442', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yanwen', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/yanwen-IdeaPad-Gaming-3-15IHU6:@/tmp/.ICE-unix/1605,unix/yanwen-IdeaPad-Gaming-3-15IHU6:/tmp/.ICE-unix/1605', 'INVOCATION_ID': '88cabed7cc274feb870edcade0d0f381', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AL10S2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:5b49992f-5d90-4d1b-8696-22f5691a7f93', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yanwen/ros2_tutorials/build/ros2_tutorials_py', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:/home/yanwen/ros2_tutorials/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache'}, 'shell': False}
+[0.193560] (custom_interfaces) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/yanwen/ros2_tutorials/build/custom_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'yanwen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yanwen/ros2_tutorials/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yanwen'), ('OLDPWD', '/home/yanwen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1458'), ('SYSTEMD_EXEC_PID', '1635'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7958'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install:/home/yanwen/gazebo_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yanwen'), ('JOURNAL_STREAM', '8:16442'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yanwen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yanwen-IdeaPad-Gaming-3-15IHU6:@/tmp/.ICE-unix/1605,unix/yanwen-IdeaPad-Gaming-3-15IHU6:/tmp/.ICE-unix/1605'), ('INVOCATION_ID', '88cabed7cc274feb870edcade0d0f381'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AL10S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5b49992f-5d90-4d1b-8696-22f5691a7f93'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yanwen/ros2_tutorials/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:/home/yanwen/ros2_tutorials/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/gazebo_ws/install/my_robot')]), 'shell': False}
+[0.195433] (ros2_tutorials_cpp) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'yanwen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yanwen/ros2_tutorials/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yanwen'), ('OLDPWD', '/home/yanwen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1458'), ('SYSTEMD_EXEC_PID', '1635'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7958'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install:/home/yanwen/gazebo_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yanwen'), ('JOURNAL_STREAM', '8:16442'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yanwen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yanwen-IdeaPad-Gaming-3-15IHU6:@/tmp/.ICE-unix/1605,unix/yanwen-IdeaPad-Gaming-3-15IHU6:/tmp/.ICE-unix/1605'), ('INVOCATION_ID', '88cabed7cc274feb870edcade0d0f381'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AL10S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5b49992f-5d90-4d1b-8696-22f5691a7f93'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:/home/yanwen/ros2_tutorials/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot')]), 'shell': False}
+[0.198746] (custom_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.198958] (custom_interfaces) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.199041] (custom_interfaces) StdoutLine: {'line': b'   Site: yanwen-IdeaPad-Gaming-3-15IHU6\n'}
+[0.199112] (custom_interfaces) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.199179] (custom_interfaces) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.199298] (custom_interfaces) StdoutLine: {'line': b'Create new tag: 20240819-0350 - Experimental\n'}
+[0.199375] (custom_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.199442] (custom_interfaces) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.199507] (custom_interfaces) StdoutLine: {'line': b'Test project /home/yanwen/ros2_tutorials/build/custom_interfaces\n'}
+[0.199569] (custom_interfaces) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.199684] (-) TimerEvent: {}
+[0.199878] (custom_interfaces) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.199970] (custom_interfaces) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.200036] (custom_interfaces) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.200102] (custom_interfaces) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.200168] (custom_interfaces) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.200228] (custom_interfaces) StdoutLine: {'line': b'test 1\n'}
+[0.200287] (custom_interfaces) StdoutLine: {'line': b'    Start 1: lint_cmake\n'}
+[0.200345] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.200411] (custom_interfaces) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml"\n'}
+[0.200482] (custom_interfaces) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.200546] (ros2_tutorials_cpp) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.200654] (ros2_tutorials_cpp) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.200729] (ros2_tutorials_cpp) StdoutLine: {'line': b'   Site: yanwen-IdeaPad-Gaming-3-15IHU6\n'}
+[0.200791] (ros2_tutorials_cpp) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.200852] (ros2_tutorials_cpp) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.200914] (ros2_tutorials_cpp) StdoutLine: {'line': b'Create new tag: 20240819-0350 - Experimental\n'}
+[0.200979] (ros2_tutorials_cpp) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.201041] (ros2_tutorials_cpp) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.201105] (ros2_tutorials_cpp) StdoutLine: {'line': b'Test project /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp\n'}
+[0.201165] (ros2_tutorials_cpp) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.201228] (ros2_tutorials_cpp) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.201298] (ros2_tutorials_cpp) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.201359] (ros2_tutorials_cpp) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.201419] (ros2_tutorials_cpp) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.201481] (ros2_tutorials_cpp) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.201543] (ros2_tutorials_cpp) StdoutLine: {'line': b'test 1\n'}
+[0.201619] (ros2_tutorials_cpp) StdoutLine: {'line': b'    Start 1: lint_cmake\n'}
+[0.201685] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.201746] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml"\n'}
+[0.201809] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.242629] (custom_interfaces) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/custom_interfaces':\n"}
+[0.242838] (custom_interfaces) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml\n'}
+[0.248699] (ros2_tutorials_cpp) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':\n"}
+[0.248873] (ros2_tutorials_cpp) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml\n'}
+[0.299789] (-) TimerEvent: {}
+[0.311367] (custom_interfaces) StdoutLine: {'line': b'1: CMakeLists.txt:18: Mismatching spaces inside () after command [whitespace/mismatch]\n'}
+[0.311498] (custom_interfaces) StdoutLine: {'line': b'1: \n'}
+[0.311540] (custom_interfaces) StdoutLine: {'line': b'1: \n'}
+[0.311574] (custom_interfaces) StdoutLine: {'line': b'1: 1 errors\n'}
+[0.315854] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: \n'}
+[0.315993] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: No problems found\n'}
+[0.319331] (custom_interfaces) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.319551] (custom_interfaces) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml'\n"}
+[0.324235] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.324390] (ros2_tutorials_cpp) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml'\n"}
+[0.330417] (custom_interfaces) StdoutLine: {'line': b'1/2 Test #1: lint_cmake .......................***Failed    0.13 sec\n'}
+[0.330706] (custom_interfaces) StdoutLine: {'line': b'test 2\n'}
+[0.330905] (custom_interfaces) StdoutLine: {'line': b'    Start 2: xmllint\n'}
+[0.331026] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.331092] (custom_interfaces) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml"\n'}
+[0.331166] (custom_interfaces) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.336212] (ros2_tutorials_cpp) StdoutLine: {'line': b'1/2 Test #1: lint_cmake .......................   Passed    0.14 sec\n'}
+[0.336410] (ros2_tutorials_cpp) StdoutLine: {'line': b'test 2\n'}
+[0.336455] (ros2_tutorials_cpp) StdoutLine: {'line': b'    Start 2: xmllint\n'}
+[0.336490] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.336526] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml"\n'}
+[0.336563] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.377026] (custom_interfaces) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/custom_interfaces':\n"}
+[0.377209] (custom_interfaces) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml\n'}
+[0.381042] (ros2_tutorials_cpp) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':\n"}
+[0.381170] (ros2_tutorials_cpp) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml\n'}
+[0.399881] (-) TimerEvent: {}
+[0.450732] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.450892] (ros2_tutorials_py) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.455174] (ros2_tutorials_py) StdoutLine: {'line': b'cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache\n'}
+[0.455303] (ros2_tutorials_py) StdoutLine: {'line': b'rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py\n'}
+[0.455343] (ros2_tutorials_py) StdoutLine: {'line': b'plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0\n'}
+[0.500006] (-) TimerEvent: {}
+[0.569228] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.569400] (ros2_tutorials_py) StdoutLine: {'line': b'collected 2 items                                                              \x1b[0m\n'}
+[0.569503] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[0.573486] (ros2_tutorials_py) StdoutLine: {'line': b'test/test_dummy.py \x1b[32m.\x1b[0m\x1b[32m                                                     [ 50%]\x1b[0m\n'}
+[0.600263] (-) TimerEvent: {}
+[0.700617] (-) TimerEvent: {}
+[0.801027] (-) TimerEvent: {}
+[0.901409] (-) TimerEvent: {}
+[0.930767] (custom_interfaces) StdoutLine: {'line': b"2: File 'package.xml' is invalid:\n"}
+[0.931104] (custom_interfaces) StdoutLine: {'line': b"2: /home/yanwen/ros2_tutorials/src/custom_interfaces/package.xml:16: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).\n"}
+[0.931246] (custom_interfaces) StdoutLine: {'line': b'2: /home/yanwen/ros2_tutorials/src/custom_interfaces/package.xml fails to validate\n'}
+[0.931366] (custom_interfaces) StdoutLine: {'line': b'2: \n'}
+[0.931482] (custom_interfaces) StdoutLine: {'line': b'2: 1 files are invalid\n'}
+[0.948411] (custom_interfaces) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[0.948586] (custom_interfaces) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml'\n"}
+[0.954823] (custom_interfaces) StdoutLine: {'line': b'2/2 Test #2: xmllint ..........................***Failed    0.62 sec\n'}
+[0.955082] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.955150] (custom_interfaces) StdoutLine: {'line': b'0% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 2\n'}
+[0.955190] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.955234] (custom_interfaces) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.955267] (custom_interfaces) StdoutLine: {'line': b'lint_cmake    =   0.13 sec*proc (1 test)\n'}
+[0.955305] (custom_interfaces) StdoutLine: {'line': b'linter        =   0.75 sec*proc (2 tests)\n'}
+[0.955340] (custom_interfaces) StdoutLine: {'line': b'xmllint       =   0.62 sec*proc (1 test)\n'}
+[0.955373] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.955405] (custom_interfaces) StdoutLine: {'line': b'Total Test time (real) =   0.76 sec\n'}
+[0.955438] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.955470] (custom_interfaces) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[0.955502] (custom_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  1 - lint_cmake (Failed)\x1b[0;0m\n'}
+[0.955545] (custom_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  2 - xmllint (Failed)\x1b[0;0m\n'}
+[0.955985] (ros2_tutorials_cpp) StdoutLine: {'line': b"2: File 'package.xml' is valid\n"}
+[0.956101] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: \n'}
+[0.956181] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: No problems found\n'}
+[0.956309] (custom_interfaces) StderrLine: {'line': b'Errors while running CTest\n'}
+[0.956401] (custom_interfaces) StderrLine: {'line': b'Output from these tests are in: /home/yanwen/ros2_tutorials/build/custom_interfaces/Testing/Temporary/LastTest.log\n'}
+[0.956458] (custom_interfaces) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[0.957475] (custom_interfaces) CommandEnded: {'returncode': 8}
+[0.957914] (custom_interfaces) TestFailure: {'identifier': 'custom_interfaces'}
+[0.957950] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[0.965472] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.965643] (ros2_tutorials_cpp) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml'\n"}
+[0.972705] (ros2_tutorials_cpp) StdoutLine: {'line': b'2/2 Test #2: xmllint ..........................   Passed    0.64 sec\n'}
+[0.972894] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.972941] (ros2_tutorials_cpp) StdoutLine: {'line': b'\x1b[0;32m100% tests passed\x1b[0;0m, 0 tests failed\x1b[0;0m out of 2\n'}
+[0.972978] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.973014] (ros2_tutorials_cpp) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.973049] (ros2_tutorials_cpp) StdoutLine: {'line': b'lint_cmake    =   0.14 sec*proc (1 test)\n'}
+[0.973084] (ros2_tutorials_cpp) StdoutLine: {'line': b'linter        =   0.77 sec*proc (2 tests)\n'}
+[0.973118] (ros2_tutorials_cpp) StdoutLine: {'line': b'xmllint       =   0.64 sec*proc (1 test)\n'}
+[0.973151] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.973184] (ros2_tutorials_cpp) StdoutLine: {'line': b'Total Test time (real) =   0.77 sec\n'}
+[0.975020] (ros2_tutorials_cpp) CommandEnded: {'returncode': 0}
+[0.975279] (ros2_tutorials_cpp) JobEnded: {'identifier': 'ros2_tutorials_cpp', 'rc': 0}
+[1.001640] (-) TimerEvent: {}
+[1.102092] (-) TimerEvent: {}
+[1.202669] (-) TimerEvent: {}
+[1.303193] (-) TimerEvent: {}
+[1.403746] (-) TimerEvent: {}
+[1.504170] (-) TimerEvent: {}
+[1.604724] (-) TimerEvent: {}
+[1.705290] (-) TimerEvent: {}
+[1.805852] (-) TimerEvent: {}
+[1.906297] (-) TimerEvent: {}
+[2.006715] (-) TimerEvent: {}
+[2.107148] (-) TimerEvent: {}
+[2.207603] (-) TimerEvent: {}
+[2.308014] (-) TimerEvent: {}
+[2.408547] (-) TimerEvent: {}
+[2.508987] (-) TimerEvent: {}
+[2.609530] (-) TimerEvent: {}
+[2.710091] (-) TimerEvent: {}
+[2.810677] (-) TimerEvent: {}
+[2.911243] (-) TimerEvent: {}
+[3.011801] (-) TimerEvent: {}
+[3.112309] (-) TimerEvent: {}
+[3.212713] (-) TimerEvent: {}
+[3.313234] (-) TimerEvent: {}
+[3.413710] (-) TimerEvent: {}
+[3.514341] (-) TimerEvent: {}
+[3.614904] (-) TimerEvent: {}
+[3.715455] (-) TimerEvent: {}
+[3.815901] (-) TimerEvent: {}
+[3.916455] (-) TimerEvent: {}
+[4.017035] (-) TimerEvent: {}
+[4.117480] (-) TimerEvent: {}
+[4.218055] (-) TimerEvent: {}
+[4.318496] (-) TimerEvent: {}
+[4.419068] (-) TimerEvent: {}
+[4.519508] (-) TimerEvent: {}
+[4.620006] (-) TimerEvent: {}
+[4.720293] (-) TimerEvent: {}
+[4.820616] (-) TimerEvent: {}
+[4.907589] (ros2_tutorials_py) StdoutLine: {'line': b'test/test_talker_listener.py \x1b[32m.\x1b[0m\x1b[32m                                           [100%]\x1b[0m\n'}
+[4.907776] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[4.907829] (ros2_tutorials_py) StdoutLine: {'line': b'- generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -\n'}
+[4.907868] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[32m============================== \x1b[32m\x1b[1m2 passed\x1b[0m\x1b[32m in 4.46s\x1b[0m\x1b[32m ===============================\x1b[0m\n'}
+[4.920704] (-) TimerEvent: {}
+[5.021139] (-) TimerEvent: {}
+[5.067892] (ros2_tutorials_py) CommandEnded: {'returncode': 0}
+[5.068639] (ros2_tutorials_py) JobEnded: {'identifier': 'ros2_tutorials_py', 'rc': 0}
+[5.069713] (-) EventReactorShutdown: {}

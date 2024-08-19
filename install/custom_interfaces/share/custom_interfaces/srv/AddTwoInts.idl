@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interfaces/srv/AddTwoInts.srv
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service request is here")
+    struct AddTwoInts_Request {
+      int64 a;
+
+      int64 b;
+    };
+    @verbatim (language="comment", text=
+      "Service response is here")
+    struct AddTwoInts_Response {
+      int64 sum;
+    };
+  };
+};

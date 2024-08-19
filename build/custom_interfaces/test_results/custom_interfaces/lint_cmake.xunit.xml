@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="custom_interfaces.lint_cmake"
+  tests="1"
+  errors="0"
+  failures="1"
+  time="0.001"
+>
+  <testcase
+    name="whitespace/mismatch (CMakeLists.txt:18)"
+    classname="custom_interfaces.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <system-out>Checked files:
+* CMakeLists.txt</system-out>
+</testsuite>

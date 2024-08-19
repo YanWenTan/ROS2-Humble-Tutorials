@@ -1,0 +1,666 @@
+[0.246s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.744s] [1m============================= test session starts ==============================[0m
+[0.744s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.747s] cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+[0.747s] rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+[0.747s] plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[1.002s] [1mcollecting ... [0m[1m
+[1.002s] collected 3 items                                                              [0m
+[1.002s] 
+[1.007s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[1.181s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[1.203s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[1.203s] 
+[1.203s] =================================== FAILURES ===================================
+[1.203s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[1.203s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[1.272s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1.272s] [1m[31mE   AssertionError: Found 121 code style errors / warnings:[0m
+[1.274s] [1m[31mE     ./setup.py:30:100: E501 line too long (110 > 99 characters)[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:4:1: E302 expected 2 blank lines, found 1[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:9:16: E251 unexpected spaces around keyword / parameter equals[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:9:18: E251 unexpected spaces around keyword / parameter equals[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:10:19: E251 unexpected spaces around keyword / parameter equals[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:10:21: E251 unexpected spaces around keyword / parameter equals[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:11:13: E251 unexpected spaces around keyword / parameter equals[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:11:15: E251 unexpected spaces around keyword / parameter equals[0m
+[1.274s] [1m[31mE     ./launch/talker_listerner.launch.py:15:16: E251 unexpected spaces around keyword / parameter equals[0m
+[1.275s] [1m[31mE     ./launch/talker_listerner.launch.py:15:18: E251 unexpected spaces around keyword / parameter equals[0m
+[1.275s] [1m[31mE     ./launch/talker_listerner.launch.py:16:19: E251 unexpected spaces around keyword / parameter equals[0m
+[1.275s] [1m[31mE     ./launch/talker_listerner.launch.py:16:21: E251 unexpected spaces around keyword / parameter equals[0m
+[1.275s] [1m[31mE     ./launch/talker_listerner.launch.py:17:13: E251 unexpected spaces around keyword / parameter equals[0m
+[1.275s] [1m[31mE     ./launch/talker_listerner.launch.py:17:15: E251 unexpected spaces around keyword / parameter equals[0m
+[1.275s] [1m[31mE     ./launch/talker_listerner.launch.py:23:14: W292 no newline at end of file[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:1:1: F401 'os' imported but unused[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:3:1: E265 block comment should start with '# '[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:6:1: E265 block comment should start with '# '[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:9:1: E265 block comment should start with '# '[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:12:1: F401 'custom_interfaces.srv.AddTwoInts' imported but unused[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:13:1: F401 'functools.partial' imported but unused[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:15:1: E265 block comment should start with '# '[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:16:1: E302 expected 2 blank lines, found 1[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:19:9: E265 block comment should start with '# '[0m
+[1.275s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:21:9: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:30:1: E303 too many blank lines (3)[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:31:5: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:32:21: E251 unexpected spaces around keyword / parameter equals[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/listener_node.py:38:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:1:1: F401 'os' imported but unused[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:3:1: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:6:1: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:9:1: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:12:1: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:13:1: E302 expected 2 blank lines, found 1[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:16:5: E115 expected an indented block (comment)[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:16:5: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:18:9: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:18:100: E501 line too long (102 > 99 characters)[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:20:9: E265 block comment should start with '# '[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:24:1: W293 blank line contains whitespace[0m
+[1.276s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:25:5: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:27:9: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:32:9: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:35:9: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:41:1: E303 too many blank lines (4)[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:42:5: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:43:20: E251 unexpected spaces around keyword / parameter equals[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:43:22: E251 unexpected spaces around keyword / parameter equals[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:45:5: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:48:5: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:48:100: E501 line too long (127 > 99 characters)[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:49:5: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:52:5: E265 block comment should start with '# '[0m
+[1.277s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:55:5: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:60:1: E303 too many blank lines (3)[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/talker_node.py:61:11: W292 no newline at end of file[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:1:1: F401 'os' imported but unused[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:3:1: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:6:1: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:9:1: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:15:1: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:16:1: E302 expected 2 blank lines, found 1[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:19:9: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:21:9: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:27:9: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:32:5: E303 too many blank lines (3)[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:33:9: E265 block comment should start with '# '[0m
+[1.278s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:35:9: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:36:60: E251 unexpected spaces around keyword / parameter equals[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:39:9: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:43:1: W293 blank line contains whitespace[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:44:9: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:45:9: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:48:9: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:54:13: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:54:100: E501 line too long (103 > 99 characters)[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:63:1: E303 too many blank lines (3)[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:64:5: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:65:21: E251 unexpected spaces around keyword / parameter equals[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/listener_client_node.py:71:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:1:1: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:7:1: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:10:1: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:11:1: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:12:1: E265 block comment should start with '# '[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:13:1: E302 expected 2 blank lines, found 1[0m
+[1.279s] [1m[31mE     ./ros2_tutorials_py/client_node.py:16:9: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:18:9: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:19:60: E251 unexpected spaces around keyword / parameter equals[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:21:9: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:27:9: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:28:9: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:33:1: E303 too many blank lines (3)[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:34:21: E251 unexpected spaces around keyword / parameter equals[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:35:5: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:38:5: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:43:17: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:43:100: E501 line too long (107 > 99 characters)[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:50:5: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:54:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/client_node.py:55:11: W292 no newline at end of file[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/service_node.py:3:1: F401 'time' imported but unused[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/service_node.py:5:1: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/service_node.py:8:1: E265 block comment should start with '# '[0m
+[1.280s] [1m[31mE     ./ros2_tutorials_py/service_node.py:9:1: E302 expected 2 blank lines, found 1[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:11:9: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:14:9: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:15:9: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:18:5: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:18:100: E501 line too long (128 > 99 characters)[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:19:5: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:19:100: E501 line too long (103 > 99 characters)[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:30:1: E303 too many blank lines (4)[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:31:21: E251 unexpected spaces around keyword / parameter equals[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:32:5: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:34:5: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:34:100: E501 line too long (127 > 99 characters)[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:36:5: E265 block comment should start with '# '[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:40:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1.281s] [1m[31mE     ./ros2_tutorials_py/service_node.py:41:11: W292 no newline at end of file[0m
+[1.281s] [1m[31mE   assert 1 == 0[0m
+[1.281s] ----------------------------- Captured stdout call -----------------------------
+[1.281s] 
+[1.281s] ./setup.py:30:100: E501 line too long (110 > 99 characters)
+[1.282s]             # Executables are set here: name of executable, followed by filepath and start point for execution
+[1.282s]                                                                                                    ^
+[1.282s] 
+[1.282s] ./launch/talker_listerner.launch.py:4:1: E302 expected 2 blank lines, found 1
+[1.282s] def generate_launch_description():
+[1.282s] ^
+[1.282s] 
+[1.282s] ./launch/talker_listerner.launch.py:9:16: E251 unexpected spaces around keyword / parameter equals
+[1.282s]         package = "ros2_tutorials_py",
+[1.282s]                ^
+[1.282s] 
+[1.282s] ./launch/talker_listerner.launch.py:9:18: E251 unexpected spaces around keyword / parameter equals
+[1.282s]         package = "ros2_tutorials_py",
+[1.282s]                  ^
+[1.282s] 
+[1.282s] ./launch/talker_listerner.launch.py:10:19: E251 unexpected spaces around keyword / parameter equals
+[1.282s]         executable = "talker_node",
+[1.282s]                   ^
+[1.282s] 
+[1.282s] ./launch/talker_listerner.launch.py:10:21: E251 unexpected spaces around keyword / parameter equals
+[1.283s]         executable = "talker_node",
+[1.283s]                     ^
+[1.283s] 
+[1.283s] ./launch/talker_listerner.launch.py:11:13: E251 unexpected spaces around keyword / parameter equals
+[1.283s]         name = "talker_node"
+[1.283s]             ^
+[1.283s] 
+[1.283s] ./launch/talker_listerner.launch.py:11:15: E251 unexpected spaces around keyword / parameter equals
+[1.283s]         name = "talker_node"
+[1.283s]               ^
+[1.283s] 
+[1.283s] ./launch/talker_listerner.launch.py:15:16: E251 unexpected spaces around keyword / parameter equals
+[1.283s]         package = "ros2_tutorials_py",
+[1.283s]                ^
+[1.283s] 
+[1.283s] ./launch/talker_listerner.launch.py:15:18: E251 unexpected spaces around keyword / parameter equals
+[1.283s]         package = "ros2_tutorials_py",
+[1.283s]                  ^
+[1.283s] 
+[1.283s] ./launch/talker_listerner.launch.py:16:19: E251 unexpected spaces around keyword / parameter equals
+[1.284s]         executable = "listener_node",
+[1.284s]                   ^
+[1.284s] 
+[1.284s] ./launch/talker_listerner.launch.py:16:21: E251 unexpected spaces around keyword / parameter equals
+[1.284s]         executable = "listener_node",
+[1.284s]                     ^
+[1.284s] 
+[1.284s] ./launch/talker_listerner.launch.py:17:13: E251 unexpected spaces around keyword / parameter equals
+[1.284s]         name = "listener_node"
+[1.284s]             ^
+[1.284s] 
+[1.284s] ./launch/talker_listerner.launch.py:17:15: E251 unexpected spaces around keyword / parameter equals
+[1.284s]         name = "listener_node"
+[1.284s]               ^
+[1.284s] 
+[1.284s] ./launch/talker_listerner.launch.py:23:14: W292 no newline at end of file
+[1.284s]     return ld             ^
+[1.284s] 
+[1.284s] ./ros2_tutorials_py/listener_node.py:1:1: F401 'os' imported but unused
+[1.284s] import os
+[1.284s] ^
+[1.285s] 
+[1.285s] ./ros2_tutorials_py/listener_node.py:3:1: E265 block comment should start with '# '
+[1.285s] #rclpy is python version of ROS2 Client Library (RCL), needed for EVERYTHING related to ROS2
+[1.285s] ^
+[1.285s] 
+[1.285s] ./ros2_tutorials_py/listener_node.py:6:1: E265 block comment should start with '# '
+[1.285s] #import class Node for our self-created classes to inherit from
+[1.285s] ^
+[1.285s] 
+[1.285s] ./ros2_tutorials_py/listener_node.py:9:1: E265 block comment should start with '# '
+[1.285s] #import message type publisher/subscriber uses, in this case string
+[1.285s] ^
+[1.285s] 
+[1.285s] ./ros2_tutorials_py/listener_node.py:12:1: F401 'custom_interfaces.srv.AddTwoInts' imported but unused
+[1.285s] from custom_interfaces.srv import AddTwoInts
+[1.285s] ^
+[1.285s] 
+[1.285s] ./ros2_tutorials_py/listener_node.py:13:1: F401 'functools.partial' imported but unused
+[1.285s] from functools import partial
+[1.286s] ^
+[1.286s] 
+[1.286s] ./ros2_tutorials_py/listener_node.py:15:1: E265 block comment should start with '# '
+[1.286s] #Self-created Node, inherits from class in the brackets, in this case Node
+[1.286s] ^
+[1.286s] 
+[1.286s] ./ros2_tutorials_py/listener_node.py:16:1: E302 expected 2 blank lines, found 1
+[1.286s] class ListenerNode(Node):
+[1.286s] ^
+[1.286s] 
+[1.286s] ./ros2_tutorials_py/listener_node.py:19:9: E265 block comment should start with '# '
+[1.286s]         #Initialise base class, give a name to register the node in brackets
+[1.286s]         ^
+[1.286s] 
+[1.286s] ./ros2_tutorials_py/listener_node.py:21:9: E265 block comment should start with '# '
+[1.286s]         #Create Listener, must include callback to run whenever message is received from topic
+[1.286s]         ^
+[1.286s] 
+[1.286s] ./ros2_tutorials_py/listener_node.py:30:1: E303 too many blank lines (3)
+[1.286s] def main():
+[1.287s] ^
+[1.287s] 
+[1.287s] ./ros2_tutorials_py/listener_node.py:31:5: E265 block comment should start with '# '
+[1.287s]     #Steps here are the same as that of talker_node except for running listener_node instead
+[1.287s]     ^
+[1.287s] 
+[1.287s] ./ros2_tutorials_py/listener_node.py:32:21: E251 unexpected spaces around keyword / parameter equals
+[1.287s]     rclpy.init(args= None)
+[1.287s]                     ^
+[1.287s] 
+[1.287s] ./ros2_tutorials_py/listener_node.py:38:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.287s] if (__name__ == "__main__"):
+[1.287s] ^
+[1.287s] 
+[1.287s] ./ros2_tutorials_py/talker_node.py:1:1: F401 'os' imported but unused
+[1.287s] import os
+[1.287s] ^
+[1.288s] 
+[1.288s] ./ros2_tutorials_py/talker_node.py:3:1: E265 block comment should start with '# '
+[1.288s] #rclpy is python version of ROS2 Client Library (RCL), needed for EVERYTHING related to ROS2
+[1.288s] ^
+[1.288s] 
+[1.288s] ./ros2_tutorials_py/talker_node.py:6:1: E265 block comment should start with '# '
+[1.288s] #import class Node for our self-created classes to inherit from
+[1.288s] ^
+[1.288s] 
+[1.288s] ./ros2_tutorials_py/talker_node.py:9:1: E265 block comment should start with '# '
+[1.288s] #import message type publisher/subscriber uses, in this case string
+[1.288s] ^
+[1.288s] 
+[1.288s] ./ros2_tutorials_py/talker_node.py:12:1: E265 block comment should start with '# '
+[1.289s] #Self-created Node, inherits from class in the brackets, in this case Node
+[1.289s] ^
+[1.289s] 
+[1.289s] ./ros2_tutorials_py/talker_node.py:13:1: E302 expected 2 blank lines, found 1
+[1.289s] class TalkerNode(Node):
+[1.289s] ^
+[1.289s] 
+[1.289s] ./ros2_tutorials_py/talker_node.py:16:5: E115 expected an indented block (comment)
+[1.289s]     #Initialise base class, give a name to register the node in brackets
+[1.289s]     ^
+[1.289s] 
+[1.289s] ./ros2_tutorials_py/talker_node.py:16:5: E265 block comment should start with '# '
+[1.289s]     #Initialise base class, give a name to register the node in brackets
+[1.290s]     ^
+[1.290s] 
+[1.290s] ./ros2_tutorials_py/talker_node.py:18:9: E265 block comment should start with '# '
+[1.290s]         #Create publisher, API inherited from Node class, last argument is queue size, in this case 10
+[1.290s]         ^
+[1.290s] 
+[1.290s] ./ros2_tutorials_py/talker_node.py:18:100: E501 line too long (102 > 99 characters)
+[1.290s]         #Create publisher, API inherited from Node class, last argument is queue size, in this case 10
+[1.290s]                                                                                                    ^
+[1.290s] 
+[1.290s] ./ros2_tutorials_py/talker_node.py:20:9: E265 block comment should start with '# '
+[1.290s]         #Create Timer to publish message, API inherited from Node class
+[1.290s]         ^
+[1.290s] 
+[1.290s] ./ros2_tutorials_py/talker_node.py:24:1: W293 blank line contains whitespace
+[1.291s]     
+[1.291s] ^
+[1.291s] 
+[1.291s] ./ros2_tutorials_py/talker_node.py:25:5: E265 block comment should start with '# '
+[1.291s]     #Timer callback
+[1.291s]     ^
+[1.291s] 
+[1.291s] ./ros2_tutorials_py/talker_node.py:27:9: E265 block comment should start with '# '
+[1.291s]         #Create message
+[1.291s]         ^
+[1.291s] 
+[1.291s] ./ros2_tutorials_py/talker_node.py:32:9: E265 block comment should start with '# '
+[1.291s]         #Publish message
+[1.291s]         ^
+[1.291s] 
+[1.291s] ./ros2_tutorials_py/talker_node.py:35:9: E265 block comment should start with '# '
+[1.292s]         #Log data sent
+[1.292s]         ^
+[1.292s] 
+[1.292s] ./ros2_tutorials_py/talker_node.py:41:1: E303 too many blank lines (4)
+[1.292s] def main():
+[1.292s] ^
+[1.292s] 
+[1.292s] ./ros2_tutorials_py/talker_node.py:42:5: E265 block comment should start with '# '
+[1.292s]     #Initialises ROS2, responsible for creating and destroying nodes
+[1.292s]     ^
+[1.292s] 
+[1.292s] ./ros2_tutorials_py/talker_node.py:43:20: E251 unexpected spaces around keyword / parameter equals
+[1.292s]     rclpy.init(args = None)
+[1.292s]                    ^
+[1.293s] 
+[1.293s] ./ros2_tutorials_py/talker_node.py:43:22: E251 unexpected spaces around keyword / parameter equals
+[1.293s]     rclpy.init(args = None)
+[1.293s]                      ^
+[1.293s] 
+[1.293s] ./ros2_tutorials_py/talker_node.py:45:5: E265 block comment should start with '# '
+[1.293s]     #Create Node based on self-created class
+[1.293s]     ^
+[1.293s] 
+[1.293s] ./ros2_tutorials_py/talker_node.py:48:5: E265 block comment should start with '# '
+[1.293s]     #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks
+[1.294s]     ^
+[1.294s] 
+[1.294s] ./ros2_tutorials_py/talker_node.py:48:100: E501 line too long (127 > 99 characters)
+[1.294s]     #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks
+[1.294s]                                                                                                    ^
+[1.294s] 
+[1.294s] ./ros2_tutorials_py/talker_node.py:49:5: E265 block comment should start with '# '
+[1.295s]     #Responsible for calling the publisher callback every 0.5s in this case
+[1.295s]     ^
+[1.295s] 
+[1.295s] ./ros2_tutorials_py/talker_node.py:52:5: E265 block comment should start with '# '
+[1.295s]     #Destroy Node
+[1.295s]     ^
+[1.295s] 
+[1.295s] ./ros2_tutorials_py/talker_node.py:55:5: E265 block comment should start with '# '
+[1.295s]     #Shutdown rclpy
+[1.295s]     ^
+[1.296s] 
+[1.296s] ./ros2_tutorials_py/talker_node.py:60:1: E303 too many blank lines (3)
+[1.296s] if (__name__ == "__main__"):
+[1.296s] ^
+[1.296s] 
+[1.296s] ./ros2_tutorials_py/talker_node.py:61:11: W292 no newline at end of file
+[1.296s]     main()          ^
+[1.296s] 
+[1.296s] ./ros2_tutorials_py/listener_client_node.py:1:1: F401 'os' imported but unused
+[1.296s] import os
+[1.296s] ^
+[1.297s] 
+[1.297s] ./ros2_tutorials_py/listener_client_node.py:3:1: E265 block comment should start with '# '
+[1.297s] #rclpy is python version of ROS2 Client Library (RCL), needed for EVERYTHING related to ROS2
+[1.297s] ^
+[1.297s] 
+[1.297s] ./ros2_tutorials_py/listener_client_node.py:6:1: E265 block comment should start with '# '
+[1.297s] #import class Node for our self-created classes to inherit from
+[1.297s] ^
+[1.297s] 
+[1.297s] ./ros2_tutorials_py/listener_client_node.py:9:1: E265 block comment should start with '# '
+[1.297s] #import message type publisher/subscriber uses, in this case string
+[1.298s] ^
+[1.298s] 
+[1.298s] ./ros2_tutorials_py/listener_client_node.py:15:1: E265 block comment should start with '# '
+[1.298s] #Self-created Node, inherits from class in the brackets, in this case Node
+[1.298s] ^
+[1.298s] 
+[1.298s] ./ros2_tutorials_py/listener_client_node.py:16:1: E302 expected 2 blank lines, found 1
+[1.298s] class ListenerNode(Node):
+[1.298s] ^
+[1.298s] 
+[1.299s] ./ros2_tutorials_py/listener_client_node.py:19:9: E265 block comment should start with '# '
+[1.299s]         #Initialise base class, give a name to register the node in brackets
+[1.299s]         ^
+[1.299s] 
+[1.299s] ./ros2_tutorials_py/listener_client_node.py:21:9: E265 block comment should start with '# '
+[1.299s]         #Create Listener, must include callback to run whenever message is received from topic
+[1.299s]         ^
+[1.299s] 
+[1.299s] [33m=============================== warnings summary ===============================[0m
+[1.299s] test/test_flake8.py::test_flake8
+[1.299s] test/test_flake8.py::test_flake8
+[1.299s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[1.300s] 
+[1.300s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.300s] ./ros2_tutorials_py/listener_client_node.py:27:9: E265 block comment should start with '# '
+[1.300s]         #Calls service
+[1.300s]         ^
+[1.300s] 
+[1.300s] ./ros2_tutorials_py/listener_client_node.py:32:5: E303 too many blank lines (3)
+[1.300s]     def call_service(self):
+[1.300s]     ^
+[1.300s] 
+[1.300s] ./ros2_tutorials_py/listener_client_node.py:33:9: E265 block comment should start with '# '
+[1.300s]         #Create client, SERVICE NAME MUST BE SAME FOR BOTH CLIENT AND SERVICE NODES!
+[1.300s]         ^
+[1.300s] 
+[1.300s] ./ros2_tutorials_py/listener_client_node.py:35:9: E265 block comment should start with '# '
+[1.300s]         #While service is not active, client will wait
+[1.301s]         ^
+[1.301s] 
+[1.301s] ./ros2_tutorials_py/listener_client_node.py:36:60: E251 unexpected spaces around keyword / parameter equals
+[1.301s]         while not self.client.wait_for_service(timeout_sec= 1.0):
+[1.301s]                                                            ^
+[1.301s] 
+[1.301s] ./ros2_tutorials_py/listener_client_node.py:39:9: E265 block comment should start with '# '
+[1.301s]         #Create the request and fill in data
+[1.301s]         ^
+[1.301s] 
+[1.301s] ./ros2_tutorials_py/listener_client_node.py:43:1: W293 blank line contains whitespace
+[1.302s]         
+[1.302s] ^
+[1.302s] 
+[1.302s] ./ros2_tutorials_py/listener_client_node.py:44:9: E265 block comment should start with '# '
+[1.302s]         #Make async request to service
+[1.302s]         ^
+[1.302s] 
+[1.302s] ./ros2_tutorials_py/listener_client_node.py:45:9: E265 block comment should start with '# '
+[1.302s]         #'future' is a handle of the state of the request (whether it is completed, results etc.)
+[1.302s]         ^
+[1.302s] 
+[1.303s] ./ros2_tutorials_py/listener_client_node.py:48:9: E265 block comment should start with '# '
+[1.303s]         #Callback will run when service returns a response
+[1.303s]         ^
+[1.303s] 
+[1.303s] ./ros2_tutorials_py/listener_client_node.py:54:13: E265 block comment should start with '# '
+[1.303s]             #response will take results from future as AddTwoInt data structure (int a, int b, int sum)
+[1.303s]             ^
+[1.303s] 
+[1.303s] ./ros2_tutorials_py/listener_client_node.py:54:100: E501 line too long (103 > 99 characters)
+[1.303s]             #response will take results from future as AddTwoInt data structure (int a, int b, int sum)
+[1.303s]                                                                                                    ^
+[1.303s] 
+[1.304s] ./ros2_tutorials_py/listener_client_node.py:63:1: E303 too many blank lines (3)
+[1.304s] def main():
+[1.304s] ^
+[1.304s] 
+[1.304s] ./ros2_tutorials_py/listener_client_node.py:64:5: E265 block comment should start with '# '
+[1.304s]     #Steps here are the same as that of talker_node except for running listener_node instead
+[1.304s]     ^
+[1.304s] 
+[1.304s] ./ros2_tutorials_py/listener_client_node.py:65:21: E251 unexpected spaces around keyword / parameter equals
+[1.304s]     rclpy.init(args= None)
+[1.305s]                     ^
+[1.305s] 
+[1.305s] ./ros2_tutorials_py/listener_client_node.py:71:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.305s] if (__name__ == "__main__"):
+[1.305s] ^
+[1.305s] 
+[1.305s] ./ros2_tutorials_py/client_node.py:1:1: E265 block comment should start with '# '
+[1.305s] #Import sys to get input numbers from terminal as arguments
+[1.306s] ^
+[1.306s] 
+[1.306s] ./ros2_tutorials_py/client_node.py:7:1: E265 block comment should start with '# '
+[1.306s] #Import custom interface from create package
+[1.306s] ^
+[1.306s] 
+[1.306s] ./ros2_tutorials_py/client_node.py:10:1: E265 block comment should start with '# '
+[1.306s] #Service called from here is asynchronous
+[1.306s] ^
+[1.306s] 
+[1.307s] ./ros2_tutorials_py/client_node.py:11:1: E265 block comment should start with '# '
+[1.307s] #eg. Node that calls this service does not have to wait until this service completes
+[1.307s] ^
+[1.307s] 
+[1.307s] ./ros2_tutorials_py/client_node.py:12:1: E265 block comment should start with '# '
+[1.307s] #Deadlock will occur if you try to spin a node and wait for a synchronous service
+[1.307s] ^
+[1.307s] 
+[1.307s] ./ros2_tutorials_py/client_node.py:13:1: E302 expected 2 blank lines, found 1
+[1.307s] class AsyncClientNode(Node):
+[1.307s] ^
+[1.307s] 
+[1.307s] ./ros2_tutorials_py/client_node.py:16:9: E265 block comment should start with '# '
+[1.307s]         #Create client, SERVICE NAME MUST BE SAME FOR BOTH CLIENT AND SERVICE NODES!
+[1.307s]         ^
+[1.307s] 
+[1.307s] ./ros2_tutorials_py/client_node.py:18:9: E265 block comment should start with '# '
+[1.308s]         #While service is not active, client will wait
+[1.308s]         ^
+[1.308s] 
+[1.308s] ./ros2_tutorials_py/client_node.py:19:60: E251 unexpected spaces around keyword / parameter equals
+[1.308s]         while not self.client.wait_for_service(timeout_sec= 1.0):
+[1.308s]                                                            ^
+[1.308s] 
+[1.308s] ./ros2_tutorials_py/client_node.py:21:9: E265 block comment should start with '# '
+[1.308s]         #Once service is available, initialisation will finish
+[1.308s]         ^
+[1.308s] 
+[1.308s] ./ros2_tutorials_py/client_node.py:27:9: E265 block comment should start with '# '
+[1.308s]         #Make async request to service
+[1.308s]         ^
+[1.308s] 
+[1.308s] ./ros2_tutorials_py/client_node.py:28:9: E265 block comment should start with '# '
+[1.308s]         #'future' is a handle of the state of the request (whether it is completed, results etc.)
+[1.308s]         ^
+[1.309s] 
+[1.309s] ./ros2_tutorials_py/client_node.py:33:1: E303 too many blank lines (3)
+[1.309s] def main():
+[1.309s] ^
+[1.309s] 
+[1.309s] ./ros2_tutorials_py/client_node.py:34:21: E251 unexpected spaces around keyword / parameter equals
+[1.309s]     rclpy.init(args= None)
+[1.309s]                     ^
+[1.309s] 
+[1.309s] ./ros2_tutorials_py/client_node.py:35:5: E265 block comment should start with '# '
+[1.309s]     #Create Node
+[1.309s]     ^
+[1.309s] 
+[1.309s] ./ros2_tutorials_py/client_node.py:38:5: E265 block comment should start with '# '
+[1.309s]     #Spin Node
+[1.309s]     ^
+[1.310s] 
+[1.310s] ./ros2_tutorials_py/client_node.py:43:17: E265 block comment should start with '# '
+[1.310s]                 #response will take results from future as AddTwoInt data structure (int a, int b, int sum)
+[1.310s]                 ^
+[1.310s] 
+[1.310s] ./ros2_tutorials_py/client_node.py:43:100: E501 line too long (107 > 99 characters)
+[1.310s]                 #response will take results from future as AddTwoInt data structure (int a, int b, int sum)
+[1.310s]                                                                                                    ^
+[1.310s] 
+[1.310s] ./ros2_tutorials_py/client_node.py:50:5: E265 block comment should start with '# '
+[1.310s]     #Destroy Node
+[1.310s]     ^
+[1.310s] 
+[1.310s] ./ros2_tutorials_py/client_node.py:54:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.310s] if (__name__ == "__main__"):
+[1.310s] ^
+[1.310s] 
+[1.310s] ./ros2_tutorials_py/client_node.py:55:11: W292 no newline at end of file
+[1.310s]     main()          ^
+[1.311s] 
+[1.311s] ./ros2_tutorials_py/service_node.py:3:1: F401 'time' imported but unused
+[1.311s] import time
+[1.311s] ^
+[1.311s] 
+[1.311s] ./ros2_tutorials_py/service_node.py:5:1: E265 block comment should start with '# '
+[1.311s] #Import custom interface from create package
+[1.311s] ^
+[1.311s] 
+[1.311s] ./ros2_tutorials_py/service_node.py:8:1: E265 block comment should start with '# '
+[1.311s] #Self-created Node, inherits from class in the brackets, in this case Node
+[1.311s] ^
+[1.311s] 
+[1.311s] ./ros2_tutorials_py/service_node.py:9:1: E302 expected 2 blank lines, found 1
+[1.311s] class ServiceNode(Node):
+[1.311s] ^
+[1.311s] 
+[1.311s] ./ros2_tutorials_py/service_node.py:11:9: E265 block comment should start with '# '
+[1.312s]         #Initialise base class, give a name to register the node in brackets
+[1.312s]         ^
+[1.312s] 
+[1.312s] ./ros2_tutorials_py/service_node.py:14:9: E265 block comment should start with '# '
+[1.312s]         #Create Service, Data Structure of Service, Name of service and service callback
+[1.312s]         ^
+[1.312s] 
+[1.312s] ./ros2_tutorials_py/service_node.py:15:9: E265 block comment should start with '# '
+[1.312s]         #Service callback will be called when request is received
+[1.312s]         ^
+[1.312s] 
+[1.312s] ./ros2_tutorials_py/service_node.py:18:5: E265 block comment should start with '# '
+[1.312s]     #Two arguments, 'request' to hold information about the request being sent, 'response' is something this service will return
+[1.312s]     ^
+[1.312s] 
+[1.312s] ./ros2_tutorials_py/service_node.py:18:100: E501 line too long (128 > 99 characters)
+[1.312s]     #Two arguments, 'request' to hold information about the request being sent, 'response' is something this service will return
+[1.312s]                                                                                                    ^
+[1.312s] 
+[1.313s] ./ros2_tutorials_py/service_node.py:19:5: E265 block comment should start with '# '
+[1.313s]     #In this case, request holds the two integers, while response will have the sum of the two integers
+[1.313s]     ^
+[1.313s] 
+[1.313s] ./ros2_tutorials_py/service_node.py:19:100: E501 line too long (103 > 99 characters)
+[1.313s]     #In this case, request holds the two integers, while response will have the sum of the two integers
+[1.313s]                                                                                                    ^
+[1.313s] 
+[1.313s] ./ros2_tutorials_py/service_node.py:30:1: E303 too many blank lines (4)
+[1.313s] def main():
+[1.313s] ^
+[1.313s] 
+[1.313s] ./ros2_tutorials_py/service_node.py:31:21: E251 unexpected spaces around keyword / parameter equals
+[1.313s]     rclpy.init(args= None)
+[1.313s]                     ^
+[1.313s] 
+[1.313s] ./ros2_tutorials_py/service_node.py:32:5: E265 block comment should start with '# '
+[1.314s]     #Create Node
+[1.314s]     ^
+[1.314s] 
+[1.314s] ./ros2_tutorials_py/service_node.py:34:5: E265 block comment should start with '# '
+[1.314s]     #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks
+[1.314s]     ^
+[1.314s] 
+[1.314s] ./ros2_tutorials_py/service_node.py:34:100: E501 line too long (127 > 99 characters)
+[1.314s]     #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks
+[1.314s]                                                                                                    ^
+[1.314s] 
+[1.314s] ./ros2_tutorials_py/service_node.py:36:5: E265 block comment should start with '# '
+[1.314s]     #Destroy Node
+[1.314s]     ^
+[1.314s] 
+[1.315s] ./ros2_tutorials_py/service_node.py:40:1: E305 expected 2 blank lines after class or function definition, found 1
+[1.315s] if (__name__ == "__main__"):
+[1.315s] ^
+[1.315s] 
+[1.315s] ./ros2_tutorials_py/service_node.py:41:11: W292 no newline at end of file
+[1.315s]     main()          ^
+[1.315s] 
+[1.315s] 1     E115 expected an indented block (comment)
+[1.315s] 20    E251 unexpected spaces around keyword / parameter equals
+[1.315s] 63    E265 block comment should start with '# '
+[1.315s] 6     E302 expected 2 blank lines, found 1
+[1.315s] 7     E303 too many blank lines (3)
+[1.315s] 4     E305 expected 2 blank lines after class or function definition, found 1
+[1.315s] 8     E501 line too long (107 > 99 characters)
+[1.315s] 6     F401 'os' imported but unused
+[1.315s] 4     W292 no newline at end of file
+[1.315s] 2     W293 blank line contains whitespace
+[1.315s] 
+[1.315s] 11 files checked
+[1.316s] 121 errors
+[1.316s] 
+[1.316s] 'E'-type errors: 109
+[1.316s] 'F'-type errors: 6
+[1.316s] 'W'-type errors: 6
+[1.316s] 
+[1.316s] Checked files:
+[1.316s] 
+[1.316s] * ./setup.py
+[1.316s] * ./launch/talker_listerner.launch.py
+[1.316s] * ./test/test_pep257.py
+[1.316s] * ./test/test_flake8.py
+[1.316s] * ./test/test_copyright.py
+[1.316s] * ./ros2_tutorials_py/listener_node.py
+[1.316s] * ./ros2_tutorials_py/talker_node.py
+[1.316s] * ./ros2_tutorials_py/__init__.py
+[1.316s] * ./ros2_tutorials_py/listener_client_node.py
+[1.316s] * ./ros2_tutorials_py/client_node.py
+[1.316s] * ./ros2_tutorials_py/service_node.py
+[1.316s] ----------------------------- Captured stderr call -----------------------------
+[1.317s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[1.317s] - generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+[1.317s] =========================== short test summary info ============================
+[1.317s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 121 code styl...
+[1.317s] [31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 0.53s[0m[31m ==============[0m
+[1.370s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

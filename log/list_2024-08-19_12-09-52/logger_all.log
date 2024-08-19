@@ -1,0 +1,76 @@
+[0.107s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/yanwen/ros2_tutorials']
+[0.107s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/yanwen/ros2_tutorials'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x788c40615930>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x788c40614be0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x788c40614be0>>)
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.293s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yanwen/ros2_tutorials'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extensions ['cmake', 'python']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/build) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/build) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/build) ignored
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/install) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/install) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/install) ignored
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/log) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/log) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/log) ignored
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'ros'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extensions ['cmake', 'python']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'cmake'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'python'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extensions ['python_setup_py']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src) by extension 'python_setup_py'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/custom_interfaces) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yanwen/ros2_tutorials/src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp' with type 'ros.ament_cmake' and name 'ros2_tutorials_cpp'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yanwen/ros2_tutorials/src/ros2_tutorials_py) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' with type 'ros.ament_python' and name 'ros2_tutorials_py'
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

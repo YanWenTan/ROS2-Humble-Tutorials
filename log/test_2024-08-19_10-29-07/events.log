@@ -1,0 +1,813 @@
+[0.000000] (-) TimerEvent: {}
+[0.000208] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict([('custom_interfaces', '/home/yanwen/ros2_tutorials/install/custom_interfaces')])}
+[0.000433] (ros2_tutorials_cpp) JobQueued: {'identifier': 'ros2_tutorials_cpp', 'dependencies': OrderedDict([('ros2_tutorials_cpp', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp')])}
+[0.000445] (ros2_tutorials_py) JobQueued: {'identifier': 'ros2_tutorials_py', 'dependencies': OrderedDict([('ros2_tutorials_py', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py')])}
+[0.000456] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.005327] (ros2_tutorials_cpp) JobStarted: {'identifier': 'ros2_tutorials_cpp'}
+[0.008054] (ros2_tutorials_py) JobStarted: {'identifier': 'ros2_tutorials_py'}
+[0.099911] (-) TimerEvent: {}
+[0.200162] (-) TimerEvent: {}
+[0.252610] (ros2_tutorials_py) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_SG:en', 'USER': 'yanwen', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yanwen/ros2_tutorials/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/yanwen', 'OLDPWD': '/home/yanwen', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1458', 'SYSTEMD_EXEC_PID': '1635', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7958', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yanwen/ros2_tutorials/install:/home/yanwen/gazebo_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yanwen', 'JOURNAL_STREAM': '8:16442', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yanwen', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/yanwen-IdeaPad-Gaming-3-15IHU6:@/tmp/.ICE-unix/1605,unix/yanwen-IdeaPad-Gaming-3-15IHU6:/tmp/.ICE-unix/1605', 'INVOCATION_ID': '88cabed7cc274feb870edcade0d0f381', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AL10S2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:5b49992f-5d90-4d1b-8696-22f5691a7f93', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yanwen/ros2_tutorials/build/ros2_tutorials_py', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:/home/yanwen/ros2_tutorials/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache'}, 'shell': False}
+[0.255093] (ros2_tutorials_cpp) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'yanwen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yanwen/ros2_tutorials/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yanwen'), ('OLDPWD', '/home/yanwen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1458'), ('SYSTEMD_EXEC_PID', '1635'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7958'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install:/home/yanwen/gazebo_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yanwen'), ('JOURNAL_STREAM', '8:16442'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yanwen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yanwen-IdeaPad-Gaming-3-15IHU6:@/tmp/.ICE-unix/1605,unix/yanwen-IdeaPad-Gaming-3-15IHU6:/tmp/.ICE-unix/1605'), ('INVOCATION_ID', '88cabed7cc274feb870edcade0d0f381'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AL10S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5b49992f-5d90-4d1b-8696-22f5691a7f93'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:/home/yanwen/ros2_tutorials/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot')]), 'shell': False}
+[0.256997] (custom_interfaces) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/yanwen/ros2_tutorials/build/custom_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'yanwen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yanwen/ros2_tutorials/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yanwen'), ('OLDPWD', '/home/yanwen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1458'), ('SYSTEMD_EXEC_PID', '1635'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7958'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install:/home/yanwen/gazebo_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yanwen'), ('JOURNAL_STREAM', '8:16442'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yanwen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yanwen-IdeaPad-Gaming-3-15IHU6:@/tmp/.ICE-unix/1605,unix/yanwen-IdeaPad-Gaming-3-15IHU6:/tmp/.ICE-unix/1605'), ('INVOCATION_ID', '88cabed7cc274feb870edcade0d0f381'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AL10S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/gazebo_ws/install/my_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5b49992f-5d90-4d1b-8696-22f5691a7f93'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yanwen/ros2_tutorials/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:/home/yanwen/ros2_tutorials/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/gazebo_ws/install/my_robot')]), 'shell': False}
+[0.260299] (ros2_tutorials_cpp) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.260518] (ros2_tutorials_cpp) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.260602] (ros2_tutorials_cpp) StdoutLine: {'line': b'   Site: yanwen-IdeaPad-Gaming-3-15IHU6\n'}
+[0.260670] (ros2_tutorials_cpp) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.260736] (ros2_tutorials_cpp) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.260844] (custom_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.261007] (custom_interfaces) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.261082] (custom_interfaces) StdoutLine: {'line': b'   Site: yanwen-IdeaPad-Gaming-3-15IHU6\n'}
+[0.261154] (custom_interfaces) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.261258] (ros2_tutorials_cpp) StdoutLine: {'line': b'Create new tag: 20240819-0229 - Experimental\n'}
+[0.261383] (ros2_tutorials_cpp) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.261450] (ros2_tutorials_cpp) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini\n'}
+[0.261514] (ros2_tutorials_cpp) StdoutLine: {'line': b'Test project /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp\n'}
+[0.261578] (ros2_tutorials_cpp) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.261643] (ros2_tutorials_cpp) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.261705] (ros2_tutorials_cpp) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.261767] (ros2_tutorials_cpp) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.261829] (ros2_tutorials_cpp) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.261895] (ros2_tutorials_cpp) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.261962] (ros2_tutorials_cpp) StdoutLine: {'line': b'test 1\n'}
+[0.262027] (ros2_tutorials_cpp) StdoutLine: {'line': b'    Start 1: lint_cmake\n'}
+[0.262091] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.262164] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml"\n'}
+[0.262269] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.262333] (custom_interfaces) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.262394] (custom_interfaces) StdoutLine: {'line': b'Create new tag: 20240819-0229 - Experimental\n'}
+[0.262452] (custom_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.262512] (custom_interfaces) StdoutLine: {'line': b'Parse Config file:/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini\n'}
+[0.262575] (custom_interfaces) StdoutLine: {'line': b'Test project /home/yanwen/ros2_tutorials/build/custom_interfaces\n'}
+[0.262639] (custom_interfaces) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.262700] (custom_interfaces) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.262773] (custom_interfaces) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.262837] (custom_interfaces) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.262897] (custom_interfaces) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.262957] (custom_interfaces) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.263019] (custom_interfaces) StdoutLine: {'line': b'test 1\n'}
+[0.263082] (custom_interfaces) StdoutLine: {'line': b'    Start 1: lint_cmake\n'}
+[0.263155] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.263228] (custom_interfaces) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml"\n'}
+[0.263298] (custom_interfaces) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.300260] (-) TimerEvent: {}
+[0.344412] (custom_interfaces) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/custom_interfaces':\n"}
+[0.344580] (custom_interfaces) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml\n'}
+[0.345159] (ros2_tutorials_cpp) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':\n"}
+[0.345268] (ros2_tutorials_cpp) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml\n'}
+[0.400362] (-) TimerEvent: {}
+[0.436298] (custom_interfaces) StdoutLine: {'line': b'1: CMakeLists.txt:18: Mismatching spaces inside () after command [whitespace/mismatch]\n'}
+[0.436486] (custom_interfaces) StdoutLine: {'line': b'1: \n'}
+[0.436568] (custom_interfaces) StdoutLine: {'line': b'1: \n'}
+[0.436623] (custom_interfaces) StdoutLine: {'line': b'1: 1 errors\n'}
+[0.436960] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: \n'}
+[0.437101] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: No problems found\n'}
+[0.444565] (custom_interfaces) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.444725] (custom_interfaces) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml'\n"}
+[0.451192] (ros2_tutorials_cpp) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.451370] (ros2_tutorials_cpp) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml'\n"}
+[0.455342] (custom_interfaces) StdoutLine: {'line': b'1/2 Test #1: lint_cmake .......................***Failed    0.19 sec\n'}
+[0.455540] (custom_interfaces) StdoutLine: {'line': b'test 2\n'}
+[0.455582] (custom_interfaces) StdoutLine: {'line': b'    Start 2: xmllint\n'}
+[0.455619] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[0.455654] (custom_interfaces) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml"\n'}
+[0.455693] (custom_interfaces) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.459476] (ros2_tutorials_cpp) StdoutLine: {'line': b'1/2 Test #1: lint_cmake .......................   Passed    0.20 sec\n'}
+[0.459706] (ros2_tutorials_cpp) StdoutLine: {'line': b'test 2\n'}
+[0.459777] (ros2_tutorials_cpp) StdoutLine: {'line': b'    Start 2: xmllint\n'}
+[0.459839] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[0.459898] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml"\n'}
+[0.459964] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.500535] (-) TimerEvent: {}
+[0.501862] (custom_interfaces) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/custom_interfaces':\n"}
+[0.502008] (custom_interfaces) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml\n'}
+[0.504958] (ros2_tutorials_cpp) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':\n"}
+[0.505061] (ros2_tutorials_cpp) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml\n'}
+[0.600641] (-) TimerEvent: {}
+[0.700955] (-) TimerEvent: {}
+[0.752119] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.752273] (ros2_tutorials_py) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.755242] (ros2_tutorials_py) StdoutLine: {'line': b'cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache\n'}
+[0.755294] (ros2_tutorials_py) StdoutLine: {'line': b'rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py\n'}
+[0.755345] (ros2_tutorials_py) StdoutLine: {'line': b'plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0\n'}
+[0.801075] (-) TimerEvent: {}
+[0.901419] (-) TimerEvent: {}
+[1.001704] (-) TimerEvent: {}
+[1.010494] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[1.010615] (ros2_tutorials_py) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[1.010678] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.015465] (ros2_tutorials_py) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[1.101839] (-) TimerEvent: {}
+[1.188739] (ros2_tutorials_py) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[1.201944] (-) TimerEvent: {}
+[1.210702] (ros2_tutorials_py) StdoutLine: {'line': b'test/test_pep257.py \x1b[32m.\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[1.210830] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.210868] (ros2_tutorials_py) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[1.210904] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[1.210938] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[1.279874] (ros2_tutorials_py) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[1.280624] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 121 code style errors / warnings:\x1b[0m\n'}
+[1.281015] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./setup.py:30:100: E501 line too long (110 > 99 characters)\x1b[0m\n'}
+[1.281965] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:4:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.282298] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:9:16: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282374] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:9:18: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282445] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:10:19: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282511] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:10:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282575] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:11:13: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282638] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:11:15: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282701] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:15:16: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282765] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:15:18: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282829] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:16:19: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282890] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:16:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.282952] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:17:13: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.283018] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:17:15: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.283084] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./launch/talker_listerner.launch.py:23:14: W292 no newline at end of file\x1b[0m\n'}
+[1.283157] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:1:1: F401 'os' imported but unused\x1b[0m\n"}
+[1.283224] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:3:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283285] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:6:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283344] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:9:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283404] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:12:1: F401 'custom_interfaces.srv.AddTwoInts' imported but unused\x1b[0m\n"}
+[1.283475] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:13:1: F401 'functools.partial' imported but unused\x1b[0m\n"}
+[1.283537] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:15:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283603] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:16:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.283661] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:19:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283716] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:21:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283775] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:30:1: E303 too many blank lines (3)\x1b[0m\n'}
+[1.283832] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:31:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.283894] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:32:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.283951] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_node.py:38:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.284010] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:1:1: F401 'os' imported but unused\x1b[0m\n"}
+[1.284065] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:3:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284123] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:6:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284187] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:9:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284257] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:12:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284319] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:13:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.284379] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:16:5: E115 expected an indented block (comment)\x1b[0m\n'}
+[1.284437] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:16:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284500] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:18:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284559] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:18:100: E501 line too long (102 > 99 characters)\x1b[0m\n'}
+[1.284616] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:20:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284674] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:24:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.284736] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:25:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284793] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:27:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284853] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:32:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284921] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:35:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.284994] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:41:1: E303 too many blank lines (4)\x1b[0m\n'}
+[1.285059] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:42:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.285114] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:43:20: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.285176] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:43:22: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.285246] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:45:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.285305] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:48:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.285359] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:48:100: E501 line too long (127 > 99 characters)\x1b[0m\n'}
+[1.285416] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:49:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.285472] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:52:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.285638] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:55:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.285731] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:60:1: E303 too many blank lines (3)\x1b[0m\n'}
+[1.285827] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/talker_node.py:61:11: W292 no newline at end of file\x1b[0m\n'}
+[1.285918] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:1:1: F401 'os' imported but unused\x1b[0m\n"}
+[1.285996] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:3:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286066] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:6:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286129] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:9:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286216] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:15:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286290] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:16:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.286356] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:19:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286412] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:21:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286472] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:27:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286553] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:32:5: E303 too many blank lines (3)\x1b[0m\n'}
+[1.286622] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:33:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286687] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:35:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286746] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:36:60: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.286809] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:39:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286864] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:43:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.286920] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:44:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.286981] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:45:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287037] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:48:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287090] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:54:13: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287143] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:54:100: E501 line too long (103 > 99 characters)\x1b[0m\n'}
+[1.287214] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:63:1: E303 too many blank lines (3)\x1b[0m\n'}
+[1.287268] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:64:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287323] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:65:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.287377] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/listener_client_node.py:71:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.287432] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:1:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287485] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:7:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287539] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:10:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287591] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:11:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287643] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:12:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287698] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:13:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.287751] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:16:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287803] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:18:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287855] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:19:60: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.287905] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:21:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.287964] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:27:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288015] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:28:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288071] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:33:1: E303 too many blank lines (3)\x1b[0m\n'}
+[1.288122] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:34:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.288185] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:35:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288239] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:38:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288293] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:43:17: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288344] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:43:100: E501 line too long (107 > 99 characters)\x1b[0m\n'}
+[1.288395] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:50:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288446] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:54:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.288500] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/client_node.py:55:11: W292 no newline at end of file\x1b[0m\n'}
+[1.288553] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:3:1: F401 'time' imported but unused\x1b[0m\n"}
+[1.288606] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:5:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288663] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:8:1: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288716] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:9:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.288767] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:11:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288818] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:14:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288868] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:15:9: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288919] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:18:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.288971] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:18:100: E501 line too long (128 > 99 characters)\x1b[0m\n'}
+[1.289023] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:19:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.289074] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:19:100: E501 line too long (103 > 99 characters)\x1b[0m\n'}
+[1.289124] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:30:1: E303 too many blank lines (4)\x1b[0m\n'}
+[1.289199] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:31:21: E251 unexpected spaces around keyword / parameter equals\x1b[0m\n'}
+[1.289251] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:32:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.289303] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:34:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.289362] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:34:100: E501 line too long (127 > 99 characters)\x1b[0m\n'}
+[1.289416] (ros2_tutorials_py) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:36:5: E265 block comment should start with '# '\x1b[0m\n"}
+[1.289468] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:40:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.289526] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./ros2_tutorials_py/service_node.py:41:11: W292 no newline at end of file\x1b[0m\n'}
+[1.289577] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.289629] (ros2_tutorials_py) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.289685] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.289738] (ros2_tutorials_py) StdoutLine: {'line': b'./setup.py:30:100: E501 line too long (110 > 99 characters)\n'}
+[1.289789] (ros2_tutorials_py) StdoutLine: {'line': b'            # Executables are set here: name of executable, followed by filepath and start point for execution\n'}
+[1.289840] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.289893] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.289941] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:4:1: E302 expected 2 blank lines, found 1\n'}
+[1.289992] (ros2_tutorials_py) StdoutLine: {'line': b'def generate_launch_description():\n'}
+[1.290043] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.290090] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.290138] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:9:16: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.290210] (ros2_tutorials_py) StdoutLine: {'line': b'        package = "ros2_tutorials_py",\n'}
+[1.290260] (ros2_tutorials_py) StdoutLine: {'line': b'               ^\n'}
+[1.290308] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.290358] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:9:18: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.290407] (ros2_tutorials_py) StdoutLine: {'line': b'        package = "ros2_tutorials_py",\n'}
+[1.290455] (ros2_tutorials_py) StdoutLine: {'line': b'                 ^\n'}
+[1.290505] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.290551] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:10:19: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.290601] (ros2_tutorials_py) StdoutLine: {'line': b'        executable = "talker_node",\n'}
+[1.290649] (ros2_tutorials_py) StdoutLine: {'line': b'                  ^\n'}
+[1.290697] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.290745] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:10:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.290794] (ros2_tutorials_py) StdoutLine: {'line': b'        executable = "talker_node",\n'}
+[1.290842] (ros2_tutorials_py) StdoutLine: {'line': b'                    ^\n'}
+[1.290889] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.290936] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:11:13: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.290984] (ros2_tutorials_py) StdoutLine: {'line': b'        name = "talker_node"\n'}
+[1.291031] (ros2_tutorials_py) StdoutLine: {'line': b'            ^\n'}
+[1.291079] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.291126] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:11:15: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.291184] (ros2_tutorials_py) StdoutLine: {'line': b'        name = "talker_node"\n'}
+[1.291238] (ros2_tutorials_py) StdoutLine: {'line': b'              ^\n'}
+[1.291284] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.291331] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:15:16: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.291382] (ros2_tutorials_py) StdoutLine: {'line': b'        package = "ros2_tutorials_py",\n'}
+[1.291428] (ros2_tutorials_py) StdoutLine: {'line': b'               ^\n'}
+[1.291476] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.291528] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:15:18: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.291579] (ros2_tutorials_py) StdoutLine: {'line': b'        package = "ros2_tutorials_py",\n'}
+[1.291628] (ros2_tutorials_py) StdoutLine: {'line': b'                 ^\n'}
+[1.291676] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.291725] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:16:19: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.291775] (ros2_tutorials_py) StdoutLine: {'line': b'        executable = "listener_node",\n'}
+[1.291825] (ros2_tutorials_py) StdoutLine: {'line': b'                  ^\n'}
+[1.291874] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.291922] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:16:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.291970] (ros2_tutorials_py) StdoutLine: {'line': b'        executable = "listener_node",\n'}
+[1.292018] (ros2_tutorials_py) StdoutLine: {'line': b'                    ^\n'}
+[1.292065] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.292113] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:17:13: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.292167] (ros2_tutorials_py) StdoutLine: {'line': b'        name = "listener_node"\n'}
+[1.292219] (ros2_tutorials_py) StdoutLine: {'line': b'            ^\n'}
+[1.292266] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.292313] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:17:15: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.292366] (ros2_tutorials_py) StdoutLine: {'line': b'        name = "listener_node"\n'}
+[1.292414] (ros2_tutorials_py) StdoutLine: {'line': b'              ^\n'}
+[1.292462] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.292510] (ros2_tutorials_py) StdoutLine: {'line': b'./launch/talker_listerner.launch.py:23:14: W292 no newline at end of file\n'}
+[1.292559] (ros2_tutorials_py) StdoutLine: {'line': b'    return ld             ^\n'}
+[1.292607] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.292655] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:1:1: F401 'os' imported but unused\n"}
+[1.292703] (ros2_tutorials_py) StdoutLine: {'line': b'import os\n'}
+[1.292751] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.292799] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.292846] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:3:1: E265 block comment should start with '# '\n"}
+[1.292893] (ros2_tutorials_py) StdoutLine: {'line': b'#rclpy is python version of ROS2 Client Library (RCL), needed for EVERYTHING related to ROS2\n'}
+[1.292942] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.292990] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.293037] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:6:1: E265 block comment should start with '# '\n"}
+[1.293087] (ros2_tutorials_py) StdoutLine: {'line': b'#import class Node for our self-created classes to inherit from\n'}
+[1.293132] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.293186] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.293237] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:9:1: E265 block comment should start with '# '\n"}
+[1.293284] (ros2_tutorials_py) StdoutLine: {'line': b'#import message type publisher/subscriber uses, in this case string\n'}
+[1.293336] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.293382] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.293430] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:12:1: F401 'custom_interfaces.srv.AddTwoInts' imported but unused\n"}
+[1.293477] (ros2_tutorials_py) StdoutLine: {'line': b'from custom_interfaces.srv import AddTwoInts\n'}
+[1.293525] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.293655] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.293702] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:13:1: F401 'functools.partial' imported but unused\n"}
+[1.293749] (ros2_tutorials_py) StdoutLine: {'line': b'from functools import partial\n'}
+[1.293796] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.293842] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.293888] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:15:1: E265 block comment should start with '# '\n"}
+[1.293937] (ros2_tutorials_py) StdoutLine: {'line': b'#Self-created Node, inherits from class in the brackets, in this case Node\n'}
+[1.293996] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.294041] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.294085] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_node.py:16:1: E302 expected 2 blank lines, found 1\n'}
+[1.294159] (ros2_tutorials_py) StdoutLine: {'line': b'class ListenerNode(Node):\n'}
+[1.294213] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.294278] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.294323] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:19:9: E265 block comment should start with '# '\n"}
+[1.294369] (ros2_tutorials_py) StdoutLine: {'line': b'        #Initialise base class, give a name to register the node in brackets\n'}
+[1.294415] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.294462] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.294509] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:21:9: E265 block comment should start with '# '\n"}
+[1.294555] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create Listener, must include callback to run whenever message is received from topic\n'}
+[1.294609] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.294657] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.294703] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_node.py:30:1: E303 too many blank lines (3)\n'}
+[1.294751] (ros2_tutorials_py) StdoutLine: {'line': b'def main():\n'}
+[1.294795] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.294841] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.294890] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_node.py:31:5: E265 block comment should start with '# '\n"}
+[1.294937] (ros2_tutorials_py) StdoutLine: {'line': b'    #Steps here are the same as that of talker_node except for running listener_node instead\n'}
+[1.294987] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.295034] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.295080] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_node.py:32:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.295130] (ros2_tutorials_py) StdoutLine: {'line': b'    rclpy.init(args= None)\n'}
+[1.295189] (ros2_tutorials_py) StdoutLine: {'line': b'                    ^\n'}
+[1.295237] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.295287] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_node.py:38:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.295358] (ros2_tutorials_py) StdoutLine: {'line': b'if (__name__ == "__main__"):\n'}
+[1.295429] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.295499] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.295566] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:1:1: F401 'os' imported but unused\n"}
+[1.295636] (ros2_tutorials_py) StdoutLine: {'line': b'import os\n'}
+[1.295718] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.295787] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.295858] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:3:1: E265 block comment should start with '# '\n"}
+[1.295924] (ros2_tutorials_py) StdoutLine: {'line': b'#rclpy is python version of ROS2 Client Library (RCL), needed for EVERYTHING related to ROS2\n'}
+[1.295991] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.296055] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.296125] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:6:1: E265 block comment should start with '# '\n"}
+[1.296215] (ros2_tutorials_py) StdoutLine: {'line': b'#import class Node for our self-created classes to inherit from\n'}
+[1.296287] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.296359] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.296430] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:9:1: E265 block comment should start with '# '\n"}
+[1.296501] (ros2_tutorials_py) StdoutLine: {'line': b'#import message type publisher/subscriber uses, in this case string\n'}
+[1.296570] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.296633] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.296697] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:12:1: E265 block comment should start with '# '\n"}
+[1.296763] (ros2_tutorials_py) StdoutLine: {'line': b'#Self-created Node, inherits from class in the brackets, in this case Node\n'}
+[1.296827] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.296893] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.296964] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:13:1: E302 expected 2 blank lines, found 1\n'}
+[1.297036] (ros2_tutorials_py) StdoutLine: {'line': b'class TalkerNode(Node):\n'}
+[1.297107] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.297184] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.297260] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:16:5: E115 expected an indented block (comment)\n'}
+[1.297330] (ros2_tutorials_py) StdoutLine: {'line': b'    #Initialise base class, give a name to register the node in brackets\n'}
+[1.297403] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.297476] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.297611] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:16:5: E265 block comment should start with '# '\n"}
+[1.297686] (ros2_tutorials_py) StdoutLine: {'line': b'    #Initialise base class, give a name to register the node in brackets\n'}
+[1.297758] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.297824] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.297884] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:18:9: E265 block comment should start with '# '\n"}
+[1.297941] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create publisher, API inherited from Node class, last argument is queue size, in this case 10\n'}
+[1.298017] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.298090] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.298179] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:18:100: E501 line too long (102 > 99 characters)\n'}
+[1.298249] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create publisher, API inherited from Node class, last argument is queue size, in this case 10\n'}
+[1.298307] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.298368] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.298430] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:20:9: E265 block comment should start with '# '\n"}
+[1.298489] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create Timer to publish message, API inherited from Node class\n'}
+[1.298559] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.298636] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.298703] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:24:1: W293 blank line contains whitespace\n'}
+[1.298774] (ros2_tutorials_py) StdoutLine: {'line': b'    \n'}
+[1.298840] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.298908] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.298971] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:25:5: E265 block comment should start with '# '\n"}
+[1.299037] (ros2_tutorials_py) StdoutLine: {'line': b'    #Timer callback\n'}
+[1.299101] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.299172] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.299244] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:27:9: E265 block comment should start with '# '\n"}
+[1.299306] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create message\n'}
+[1.299369] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.299431] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.299496] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:32:9: E265 block comment should start with '# '\n"}
+[1.299556] (ros2_tutorials_py) StdoutLine: {'line': b'        #Publish message\n'}
+[1.299616] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.299678] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.299739] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:35:9: E265 block comment should start with '# '\n"}
+[1.299799] (ros2_tutorials_py) StdoutLine: {'line': b'        #Log data sent\n'}
+[1.299862] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.299921] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.299980] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:41:1: E303 too many blank lines (4)\n'}
+[1.300042] (ros2_tutorials_py) StdoutLine: {'line': b'def main():\n'}
+[1.300105] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.300180] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.300246] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:42:5: E265 block comment should start with '# '\n"}
+[1.300307] (ros2_tutorials_py) StdoutLine: {'line': b'    #Initialises ROS2, responsible for creating and destroying nodes\n'}
+[1.300373] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.300449] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.300522] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:43:20: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.300621] (ros2_tutorials_py) StdoutLine: {'line': b'    rclpy.init(args = None)\n'}
+[1.300711] (ros2_tutorials_py) StdoutLine: {'line': b'                   ^\n'}
+[1.300790] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.300864] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:43:22: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.300951] (ros2_tutorials_py) StdoutLine: {'line': b'    rclpy.init(args = None)\n'}
+[1.301032] (ros2_tutorials_py) StdoutLine: {'line': b'                     ^\n'}
+[1.301116] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.301221] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:45:5: E265 block comment should start with '# '\n"}
+[1.301312] (ros2_tutorials_py) StdoutLine: {'line': b'    #Create Node based on self-created class\n'}
+[1.301396] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.301487] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.301568] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:48:5: E265 block comment should start with '# '\n"}
+[1.301660] (ros2_tutorials_py) StdoutLine: {'line': b'    #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks\n'}
+[1.301767] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.301834] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.301932] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:48:100: E501 line too long (127 > 99 characters)\n'}
+[1.302014] (-) TimerEvent: {}
+[1.302459] (ros2_tutorials_py) StdoutLine: {'line': b'    #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks\n'}
+[1.302566] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.302643] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.302721] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:49:5: E265 block comment should start with '# '\n"}
+[1.302780] (ros2_tutorials_py) StdoutLine: {'line': b'    #Responsible for calling the publisher callback every 0.5s in this case\n'}
+[1.302844] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.302903] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.303004] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:52:5: E265 block comment should start with '# '\n"}
+[1.303106] (ros2_tutorials_py) StdoutLine: {'line': b'    #Destroy Node\n'}
+[1.303218] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.303320] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.303425] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/talker_node.py:55:5: E265 block comment should start with '# '\n"}
+[1.303529] (ros2_tutorials_py) StdoutLine: {'line': b'    #Shutdown rclpy\n'}
+[1.303635] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.303742] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.303849] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:60:1: E303 too many blank lines (3)\n'}
+[1.303957] (ros2_tutorials_py) StdoutLine: {'line': b'if (__name__ == "__main__"):\n'}
+[1.304059] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.304173] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.304264] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/talker_node.py:61:11: W292 no newline at end of file\n'}
+[1.304351] (ros2_tutorials_py) StdoutLine: {'line': b'    main()          ^\n'}
+[1.304434] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.304517] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:1:1: F401 'os' imported but unused\n"}
+[1.304601] (ros2_tutorials_py) StdoutLine: {'line': b'import os\n'}
+[1.304684] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.304767] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.304849] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:3:1: E265 block comment should start with '# '\n"}
+[1.304936] (ros2_tutorials_py) StdoutLine: {'line': b'#rclpy is python version of ROS2 Client Library (RCL), needed for EVERYTHING related to ROS2\n'}
+[1.305021] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.305106] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.305199] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:6:1: E265 block comment should start with '# '\n"}
+[1.305287] (ros2_tutorials_py) StdoutLine: {'line': b'#import class Node for our self-created classes to inherit from\n'}
+[1.305372] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.305458] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.305541] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:9:1: E265 block comment should start with '# '\n"}
+[1.305629] (ros2_tutorials_py) StdoutLine: {'line': b'#import message type publisher/subscriber uses, in this case string\n'}
+[1.305723] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.305837] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.305947] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:15:1: E265 block comment should start with '# '\n"}
+[1.306059] (ros2_tutorials_py) StdoutLine: {'line': b'#Self-created Node, inherits from class in the brackets, in this case Node\n'}
+[1.306179] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.306314] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.306403] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:16:1: E302 expected 2 blank lines, found 1\n'}
+[1.306488] (ros2_tutorials_py) StdoutLine: {'line': b'class ListenerNode(Node):\n'}
+[1.306574] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.306660] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.306746] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:19:9: E265 block comment should start with '# '\n"}
+[1.306834] (ros2_tutorials_py) StdoutLine: {'line': b'        #Initialise base class, give a name to register the node in brackets\n'}
+[1.306928] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.307018] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.307107] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:21:9: E265 block comment should start with '# '\n"}
+[1.307215] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create Listener, must include callback to run whenever message is received from topic\n'}
+[1.307307] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.307396] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.307485] (ros2_tutorials_py) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[1.307612] (ros2_tutorials_py) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[1.307675] (ros2_tutorials_py) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[1.307731] (ros2_tutorials_py) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[1.307785] (ros2_tutorials_py) StderrLine: {'line': b'\n'}
+[1.307840] (ros2_tutorials_py) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[1.307898] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:27:9: E265 block comment should start with '# '\n"}
+[1.307956] (ros2_tutorials_py) StdoutLine: {'line': b'        #Calls service\n'}
+[1.308014] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.308081] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.308137] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:32:5: E303 too many blank lines (3)\n'}
+[1.308205] (ros2_tutorials_py) StdoutLine: {'line': b'    def call_service(self):\n'}
+[1.308257] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.308309] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.308360] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:33:9: E265 block comment should start with '# '\n"}
+[1.308432] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create client, SERVICE NAME MUST BE SAME FOR BOTH CLIENT AND SERVICE NODES!\n'}
+[1.308485] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.308541] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.308624] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:35:9: E265 block comment should start with '# '\n"}
+[1.308707] (ros2_tutorials_py) StdoutLine: {'line': b'        #While service is not active, client will wait\n'}
+[1.308797] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.308881] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.308961] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:36:60: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.309047] (ros2_tutorials_py) StdoutLine: {'line': b'        while not self.client.wait_for_service(timeout_sec= 1.0):\n'}
+[1.309133] (ros2_tutorials_py) StdoutLine: {'line': b'                                                           ^\n'}
+[1.309233] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.309313] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:39:9: E265 block comment should start with '# '\n"}
+[1.309390] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create the request and fill in data\n'}
+[1.309473] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.309552] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.309643] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:43:1: W293 blank line contains whitespace\n'}
+[1.309734] (ros2_tutorials_py) StdoutLine: {'line': b'        \n'}
+[1.309821] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.309908] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.310002] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:44:9: E265 block comment should start with '# '\n"}
+[1.310096] (ros2_tutorials_py) StdoutLine: {'line': b'        #Make async request to service\n'}
+[1.310205] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.310302] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.310393] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:45:9: E265 block comment should start with '# '\n"}
+[1.310481] (ros2_tutorials_py) StdoutLine: {'line': b"        #'future' is a handle of the state of the request (whether it is completed, results etc.)\n"}
+[1.310571] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.310661] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.310746] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:48:9: E265 block comment should start with '# '\n"}
+[1.310832] (ros2_tutorials_py) StdoutLine: {'line': b'        #Callback will run when service returns a response\n'}
+[1.310923] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.311013] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.311103] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:54:13: E265 block comment should start with '# '\n"}
+[1.311196] (ros2_tutorials_py) StdoutLine: {'line': b'            #response will take results from future as AddTwoInt data structure (int a, int b, int sum)\n'}
+[1.311283] (ros2_tutorials_py) StdoutLine: {'line': b'            ^\n'}
+[1.311363] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.311441] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:54:100: E501 line too long (103 > 99 characters)\n'}
+[1.311522] (ros2_tutorials_py) StdoutLine: {'line': b'            #response will take results from future as AddTwoInt data structure (int a, int b, int sum)\n'}
+[1.311610] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.311696] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.311788] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:63:1: E303 too many blank lines (3)\n'}
+[1.311877] (ros2_tutorials_py) StdoutLine: {'line': b'def main():\n'}
+[1.311971] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.312066] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.312170] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/listener_client_node.py:64:5: E265 block comment should start with '# '\n"}
+[1.312280] (ros2_tutorials_py) StdoutLine: {'line': b'    #Steps here are the same as that of talker_node except for running listener_node instead\n'}
+[1.312378] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.312469] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.312572] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:65:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.312674] (ros2_tutorials_py) StdoutLine: {'line': b'    rclpy.init(args= None)\n'}
+[1.312786] (ros2_tutorials_py) StdoutLine: {'line': b'                    ^\n'}
+[1.312905] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.313023] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/listener_client_node.py:71:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.313171] (ros2_tutorials_py) StdoutLine: {'line': b'if (__name__ == "__main__"):\n'}
+[1.313340] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.313424] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.313527] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:1:1: E265 block comment should start with '# '\n"}
+[1.313653] (ros2_tutorials_py) StdoutLine: {'line': b'#Import sys to get input numbers from terminal as arguments\n'}
+[1.313783] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.313900] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.314032] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:7:1: E265 block comment should start with '# '\n"}
+[1.314193] (ros2_tutorials_py) StdoutLine: {'line': b'#Import custom interface from create package\n'}
+[1.314302] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.314387] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.314494] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:10:1: E265 block comment should start with '# '\n"}
+[1.314571] (ros2_tutorials_py) StdoutLine: {'line': b'#Service called from here is asynchronous\n'}
+[1.314635] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.314701] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.314761] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:11:1: E265 block comment should start with '# '\n"}
+[1.314830] (ros2_tutorials_py) StdoutLine: {'line': b'#eg. Node that calls this service does not have to wait until this service completes\n'}
+[1.314896] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.314958] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.315014] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:12:1: E265 block comment should start with '# '\n"}
+[1.315071] (ros2_tutorials_py) StdoutLine: {'line': b'#Deadlock will occur if you try to spin a node and wait for a synchronous service\n'}
+[1.315127] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.315201] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.315260] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:13:1: E302 expected 2 blank lines, found 1\n'}
+[1.315317] (ros2_tutorials_py) StdoutLine: {'line': b'class AsyncClientNode(Node):\n'}
+[1.315380] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.315436] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.315488] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:16:9: E265 block comment should start with '# '\n"}
+[1.315543] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create client, SERVICE NAME MUST BE SAME FOR BOTH CLIENT AND SERVICE NODES!\n'}
+[1.315613] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.315669] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.315721] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:18:9: E265 block comment should start with '# '\n"}
+[1.315778] (ros2_tutorials_py) StdoutLine: {'line': b'        #While service is not active, client will wait\n'}
+[1.315831] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.315884] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.315936] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:19:60: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.315993] (ros2_tutorials_py) StdoutLine: {'line': b'        while not self.client.wait_for_service(timeout_sec= 1.0):\n'}
+[1.316049] (ros2_tutorials_py) StdoutLine: {'line': b'                                                           ^\n'}
+[1.316102] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.316164] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:21:9: E265 block comment should start with '# '\n"}
+[1.316230] (ros2_tutorials_py) StdoutLine: {'line': b'        #Once service is available, initialisation will finish\n'}
+[1.316282] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.316335] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.316384] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:27:9: E265 block comment should start with '# '\n"}
+[1.316448] (ros2_tutorials_py) StdoutLine: {'line': b'        #Make async request to service\n'}
+[1.316498] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.316557] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.316611] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:28:9: E265 block comment should start with '# '\n"}
+[1.316673] (ros2_tutorials_py) StdoutLine: {'line': b"        #'future' is a handle of the state of the request (whether it is completed, results etc.)\n"}
+[1.316742] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.316811] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.316883] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:33:1: E303 too many blank lines (3)\n'}
+[1.316951] (ros2_tutorials_py) StdoutLine: {'line': b'def main():\n'}
+[1.317014] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.317081] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.317145] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:34:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.317232] (ros2_tutorials_py) StdoutLine: {'line': b'    rclpy.init(args= None)\n'}
+[1.317284] (ros2_tutorials_py) StdoutLine: {'line': b'                    ^\n'}
+[1.317341] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.317394] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:35:5: E265 block comment should start with '# '\n"}
+[1.317447] (ros2_tutorials_py) StdoutLine: {'line': b'    #Create Node\n'}
+[1.317500] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.317554] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.317606] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:38:5: E265 block comment should start with '# '\n"}
+[1.317656] (ros2_tutorials_py) StdoutLine: {'line': b'    #Spin Node\n'}
+[1.317709] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.317759] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.317816] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:43:17: E265 block comment should start with '# '\n"}
+[1.317867] (ros2_tutorials_py) StdoutLine: {'line': b'                #response will take results from future as AddTwoInt data structure (int a, int b, int sum)\n'}
+[1.317924] (ros2_tutorials_py) StdoutLine: {'line': b'                ^\n'}
+[1.317975] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.318025] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:43:100: E501 line too long (107 > 99 characters)\n'}
+[1.318074] (ros2_tutorials_py) StdoutLine: {'line': b'                #response will take results from future as AddTwoInt data structure (int a, int b, int sum)\n'}
+[1.318123] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.318185] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.318238] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/client_node.py:50:5: E265 block comment should start with '# '\n"}
+[1.318289] (ros2_tutorials_py) StdoutLine: {'line': b'    #Destroy Node\n'}
+[1.318340] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.318391] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.318443] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:54:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.318496] (ros2_tutorials_py) StdoutLine: {'line': b'if (__name__ == "__main__"):\n'}
+[1.318551] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.318603] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.318651] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/client_node.py:55:11: W292 no newline at end of file\n'}
+[1.318705] (ros2_tutorials_py) StdoutLine: {'line': b'    main()          ^\n'}
+[1.318758] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.318809] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:3:1: F401 'time' imported but unused\n"}
+[1.318893] (ros2_tutorials_py) StdoutLine: {'line': b'import time\n'}
+[1.318948] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.318998] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.319053] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:5:1: E265 block comment should start with '# '\n"}
+[1.319108] (ros2_tutorials_py) StdoutLine: {'line': b'#Import custom interface from create package\n'}
+[1.319180] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.319243] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.319297] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:8:1: E265 block comment should start with '# '\n"}
+[1.319351] (ros2_tutorials_py) StdoutLine: {'line': b'#Self-created Node, inherits from class in the brackets, in this case Node\n'}
+[1.319408] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.319462] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.319511] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[1.319561] (ros2_tutorials_py) StdoutLine: {'line': b'class ServiceNode(Node):\n'}
+[1.319612] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.319662] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.319712] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:11:9: E265 block comment should start with '# '\n"}
+[1.319761] (ros2_tutorials_py) StdoutLine: {'line': b'        #Initialise base class, give a name to register the node in brackets\n'}
+[1.319812] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.319863] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.319912] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:14:9: E265 block comment should start with '# '\n"}
+[1.319962] (ros2_tutorials_py) StdoutLine: {'line': b'        #Create Service, Data Structure of Service, Name of service and service callback\n'}
+[1.320011] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.320062] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.320115] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:15:9: E265 block comment should start with '# '\n"}
+[1.320177] (ros2_tutorials_py) StdoutLine: {'line': b'        #Service callback will be called when request is received\n'}
+[1.320231] (ros2_tutorials_py) StdoutLine: {'line': b'        ^\n'}
+[1.320280] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.320336] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:18:5: E265 block comment should start with '# '\n"}
+[1.320391] (ros2_tutorials_py) StdoutLine: {'line': b"    #Two arguments, 'request' to hold information about the request being sent, 'response' is something this service will return\n"}
+[1.320480] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.320535] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.320588] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:18:100: E501 line too long (128 > 99 characters)\n'}
+[1.320642] (ros2_tutorials_py) StdoutLine: {'line': b"    #Two arguments, 'request' to hold information about the request being sent, 'response' is something this service will return\n"}
+[1.320694] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.320749] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.320801] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:19:5: E265 block comment should start with '# '\n"}
+[1.320855] (ros2_tutorials_py) StdoutLine: {'line': b'    #In this case, request holds the two integers, while response will have the sum of the two integers\n'}
+[1.320909] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.320965] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.321020] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:19:100: E501 line too long (103 > 99 characters)\n'}
+[1.321090] (ros2_tutorials_py) StdoutLine: {'line': b'    #In this case, request holds the two integers, while response will have the sum of the two integers\n'}
+[1.321160] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.321251] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.321313] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:30:1: E303 too many blank lines (4)\n'}
+[1.321364] (ros2_tutorials_py) StdoutLine: {'line': b'def main():\n'}
+[1.321416] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.321470] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.321526] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:31:21: E251 unexpected spaces around keyword / parameter equals\n'}
+[1.321583] (ros2_tutorials_py) StdoutLine: {'line': b'    rclpy.init(args= None)\n'}
+[1.321636] (ros2_tutorials_py) StdoutLine: {'line': b'                    ^\n'}
+[1.321689] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.321744] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:32:5: E265 block comment should start with '# '\n"}
+[1.321798] (ros2_tutorials_py) StdoutLine: {'line': b'    #Create Node\n'}
+[1.321884] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.321945] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.322000] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:34:5: E265 block comment should start with '# '\n"}
+[1.322060] (ros2_tutorials_py) StdoutLine: {'line': b'    #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks\n'}
+[1.322126] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.322215] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.322271] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:34:100: E501 line too long (127 > 99 characters)\n'}
+[1.322363] (ros2_tutorials_py) StdoutLine: {'line': b'    #Start Node, rclpy.spin allows node to keep running and checks for events on subscribed topics and service/direct callbacks\n'}
+[1.322421] (ros2_tutorials_py) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.322478] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.322532] (ros2_tutorials_py) StdoutLine: {'line': b"./ros2_tutorials_py/service_node.py:36:5: E265 block comment should start with '# '\n"}
+[1.322585] (ros2_tutorials_py) StdoutLine: {'line': b'    #Destroy Node\n'}
+[1.322645] (ros2_tutorials_py) StdoutLine: {'line': b'    ^\n'}
+[1.322707] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.322761] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:40:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.322816] (ros2_tutorials_py) StdoutLine: {'line': b'if (__name__ == "__main__"):\n'}
+[1.322868] (ros2_tutorials_py) StdoutLine: {'line': b'^\n'}
+[1.322918] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.322968] (ros2_tutorials_py) StdoutLine: {'line': b'./ros2_tutorials_py/service_node.py:41:11: W292 no newline at end of file\n'}
+[1.323017] (ros2_tutorials_py) StdoutLine: {'line': b'    main()          ^\n'}
+[1.323068] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.323117] (ros2_tutorials_py) StdoutLine: {'line': b'1     E115 expected an indented block (comment)\n'}
+[1.323176] (ros2_tutorials_py) StdoutLine: {'line': b'20    E251 unexpected spaces around keyword / parameter equals\n'}
+[1.323231] (ros2_tutorials_py) StdoutLine: {'line': b"63    E265 block comment should start with '# '\n"}
+[1.323285] (ros2_tutorials_py) StdoutLine: {'line': b'6     E302 expected 2 blank lines, found 1\n'}
+[1.323335] (ros2_tutorials_py) StdoutLine: {'line': b'7     E303 too many blank lines (3)\n'}
+[1.323386] (ros2_tutorials_py) StdoutLine: {'line': b'4     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.323448] (ros2_tutorials_py) StdoutLine: {'line': b'8     E501 line too long (107 > 99 characters)\n'}
+[1.323498] (ros2_tutorials_py) StdoutLine: {'line': b"6     F401 'os' imported but unused\n"}
+[1.323550] (ros2_tutorials_py) StdoutLine: {'line': b'4     W292 no newline at end of file\n'}
+[1.323603] (ros2_tutorials_py) StdoutLine: {'line': b'2     W293 blank line contains whitespace\n'}
+[1.323656] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.323708] (ros2_tutorials_py) StdoutLine: {'line': b'11 files checked\n'}
+[1.323761] (ros2_tutorials_py) StdoutLine: {'line': b'121 errors\n'}
+[1.323815] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.323866] (ros2_tutorials_py) StdoutLine: {'line': b"'E'-type errors: 109\n"}
+[1.323917] (ros2_tutorials_py) StdoutLine: {'line': b"'F'-type errors: 6\n"}
+[1.323969] (ros2_tutorials_py) StdoutLine: {'line': b"'W'-type errors: 6\n"}
+[1.324022] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.324074] (ros2_tutorials_py) StdoutLine: {'line': b'Checked files:\n'}
+[1.324127] (ros2_tutorials_py) StdoutLine: {'line': b'\n'}
+[1.324189] (ros2_tutorials_py) StdoutLine: {'line': b'* ./setup.py\n'}
+[1.324243] (ros2_tutorials_py) StdoutLine: {'line': b'* ./launch/talker_listerner.launch.py\n'}
+[1.324295] (ros2_tutorials_py) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[1.324346] (ros2_tutorials_py) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[1.324395] (ros2_tutorials_py) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[1.324443] (ros2_tutorials_py) StdoutLine: {'line': b'* ./ros2_tutorials_py/listener_node.py\n'}
+[1.324489] (ros2_tutorials_py) StdoutLine: {'line': b'* ./ros2_tutorials_py/talker_node.py\n'}
+[1.324536] (ros2_tutorials_py) StdoutLine: {'line': b'* ./ros2_tutorials_py/__init__.py\n'}
+[1.324582] (ros2_tutorials_py) StdoutLine: {'line': b'* ./ros2_tutorials_py/listener_client_node.py\n'}
+[1.324634] (ros2_tutorials_py) StdoutLine: {'line': b'* ./ros2_tutorials_py/client_node.py\n'}
+[1.324683] (ros2_tutorials_py) StdoutLine: {'line': b'* ./ros2_tutorials_py/service_node.py\n'}
+[1.324735] (ros2_tutorials_py) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[1.324788] (ros2_tutorials_py) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.324842] (ros2_tutorials_py) StdoutLine: {'line': b'- generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -\n'}
+[1.324907] (ros2_tutorials_py) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[1.324960] (ros2_tutorials_py) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 121 code styl...\n'}
+[1.325012] (ros2_tutorials_py) StdoutLine: {'line': b'\x1b[31m============== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m1 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.53s\x1b[0m\x1b[31m ==============\x1b[0m\n'}
+[1.377639] (ros2_tutorials_py) CommandEnded: {'returncode': 1}
+[1.377936] (ros2_tutorials_py) TestFailure: {'identifier': 'ros2_tutorials_py'}
+[1.377958] (ros2_tutorials_py) JobEnded: {'identifier': 'ros2_tutorials_py', 'rc': 0}
+[1.402140] (-) TimerEvent: {}
+[1.502549] (-) TimerEvent: {}
+[1.602977] (-) TimerEvent: {}
+[1.703508] (-) TimerEvent: {}
+[1.803938] (-) TimerEvent: {}
+[1.904353] (-) TimerEvent: {}
+[2.004726] (-) TimerEvent: {}
+[2.100523] (custom_interfaces) StdoutLine: {'line': b"2: File 'package.xml' is invalid:\n"}
+[2.100797] (custom_interfaces) StdoutLine: {'line': b"2: /home/yanwen/ros2_tutorials/src/custom_interfaces/package.xml:16: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).\n"}
+[2.100919] (custom_interfaces) StdoutLine: {'line': b'2: /home/yanwen/ros2_tutorials/src/custom_interfaces/package.xml fails to validate\n'}
+[2.101030] (custom_interfaces) StdoutLine: {'line': b'2: \n'}
+[2.101180] (custom_interfaces) StdoutLine: {'line': b'2: 1 files are invalid\n'}
+[2.101302] (ros2_tutorials_cpp) StdoutLine: {'line': b"2: File 'package.xml' is valid\n"}
+[2.101427] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: \n'}
+[2.101540] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: No problems found\n'}
+[2.104915] (-) TimerEvent: {}
+[2.116921] (ros2_tutorials_cpp) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[2.117231] (custom_interfaces) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[2.117325] (ros2_tutorials_cpp) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml'\n"}
+[2.117390] (custom_interfaces) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml'\n"}
+[2.125122] (ros2_tutorials_cpp) StdoutLine: {'line': b'2/2 Test #2: xmllint ..........................   Passed    1.67 sec\n'}
+[2.125356] (custom_interfaces) StdoutLine: {'line': b'2/2 Test #2: xmllint ..........................***Failed    1.67 sec\n'}
+[2.125446] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[2.125488] (ros2_tutorials_cpp) StdoutLine: {'line': b'\x1b[0;32m100% tests passed\x1b[0;0m, 0 tests failed\x1b[0;0m out of 2\n'}
+[2.125526] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[2.125564] (ros2_tutorials_cpp) StdoutLine: {'line': b'Label Time Summary:\n'}
+[2.125603] (ros2_tutorials_cpp) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[2.125642] (ros2_tutorials_cpp) StdoutLine: {'line': b'linter        =   1.86 sec*proc (2 tests)\n'}
+[2.125680] (ros2_tutorials_cpp) StdoutLine: {'line': b'xmllint       =   1.67 sec*proc (1 test)\n'}
+[2.125718] (ros2_tutorials_cpp) StdoutLine: {'line': b'\n'}
+[2.125755] (ros2_tutorials_cpp) StdoutLine: {'line': b'Total Test time (real) =   1.86 sec\n'}
+[2.125793] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[2.125831] (custom_interfaces) StdoutLine: {'line': b'0% tests passed\x1b[0;0m, \x1b[0;31m2 tests failed\x1b[0;0m out of 2\n'}
+[2.125870] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[2.125908] (custom_interfaces) StdoutLine: {'line': b'Label Time Summary:\n'}
+[2.125945] (custom_interfaces) StdoutLine: {'line': b'lint_cmake    =   0.19 sec*proc (1 test)\n'}
+[2.125982] (custom_interfaces) StdoutLine: {'line': b'linter        =   1.86 sec*proc (2 tests)\n'}
+[2.126019] (custom_interfaces) StdoutLine: {'line': b'xmllint       =   1.67 sec*proc (1 test)\n'}
+[2.126063] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[2.126098] (custom_interfaces) StdoutLine: {'line': b'Total Test time (real) =   1.86 sec\n'}
+[2.126134] (custom_interfaces) StdoutLine: {'line': b'\n'}
+[2.126180] (custom_interfaces) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[2.126217] (custom_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  1 - lint_cmake (Failed)\x1b[0;0m\n'}
+[2.126253] (custom_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  2 - xmllint (Failed)\x1b[0;0m\n'}
+[2.126308] (custom_interfaces) StderrLine: {'line': b'Errors while running CTest\n'}
+[2.126364] (custom_interfaces) StderrLine: {'line': b'Output from these tests are in: /home/yanwen/ros2_tutorials/build/custom_interfaces/Testing/Temporary/LastTest.log\n'}
+[2.126401] (custom_interfaces) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[2.128710] (custom_interfaces) CommandEnded: {'returncode': 8}
+[2.129589] (custom_interfaces) TestFailure: {'identifier': 'custom_interfaces'}
+[2.130054] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[2.130497] (ros2_tutorials_cpp) CommandEnded: {'returncode': 0}
+[2.130723] (ros2_tutorials_cpp) JobEnded: {'identifier': 'ros2_tutorials_cpp', 'rc': 0}
+[2.130876] (-) EventReactorShutdown: {}

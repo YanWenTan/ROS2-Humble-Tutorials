@@ -1,0 +1,15 @@
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ament_index/resource_index/package_run_dependencies/ros2_tutorials_cpp
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ament_index/resource_index/parent_prefix_path/ros2_tutorials_cpp
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/environment/ament_prefix_path.sh
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/environment/ament_prefix_path.dsv
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/environment/path.sh
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/environment/path.dsv
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/local_setup.bash
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/local_setup.sh
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/local_setup.zsh
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/local_setup.dsv
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/package.dsv
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ament_index/resource_index/packages/ros2_tutorials_cpp
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/cmake/ros2_tutorials_cppConfig.cmake
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/cmake/ros2_tutorials_cppConfig-version.cmake
+/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp/share/ros2_tutorials_cpp/package.xml

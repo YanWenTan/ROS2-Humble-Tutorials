@@ -1,0 +1,12 @@
+[0.177s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.379s] [1m============================= test session starts ==============================[0m
+[0.379s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.382s] cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+[0.382s] rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+[0.382s] plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[0.386s] [1mcollecting ... [0m[1m
+[0.386s] collected 0 items                                                              [0m
+[0.386s] 
+[0.386s] - generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+[0.386s] [33m============================ [33mno tests ran[0m[33m in 0.01s[0m[33m =============================[0m
+[0.424s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '5': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

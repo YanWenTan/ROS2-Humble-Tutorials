@@ -1,0 +1,55 @@
+[0.490s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTHONPATH=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/prefix_override:/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_tutorials_py build --build-base /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build install --record /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log --single-version-externally-managed install_data
+[0.681s] running egg_info
+[0.682s] creating ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info
+[0.682s] writing ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/PKG-INFO
+[0.682s] writing dependency_links to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/dependency_links.txt
+[0.682s] writing entry points to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/entry_points.txt
+[0.682s] writing requirements to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/requires.txt
+[0.682s] writing top-level names to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/top_level.txt
+[0.682s] writing manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+[0.683s] reading manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+[0.684s] writing manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+[0.684s] running build
+[0.684s] running build_py
+[0.684s] creating /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build
+[0.684s] creating /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib
+[0.684s] creating /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.684s] copying ros2_tutorials_py/listener_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.684s] copying ros2_tutorials_py/talker_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.684s] copying ros2_tutorials_py/__init__.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.685s] copying ros2_tutorials_py/listener_client_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.685s] copying ros2_tutorials_py/client_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.685s] copying ros2_tutorials_py/service_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+[0.685s] running install
+[0.685s] running install_lib
+[0.685s] creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.685s] copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/listener_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.685s] copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/talker_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.686s] copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/__init__.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.686s] copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/listener_client_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.686s] copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/client_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.686s] copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/service_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+[0.686s] byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/listener_node.py to listener_node.cpython-310.pyc
+[0.686s] byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/talker_node.py to talker_node.cpython-310.pyc
+[0.686s] byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/__init__.py to __init__.cpython-310.pyc
+[0.687s] byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/listener_client_node.py to listener_client_node.cpython-310.pyc
+[0.687s] byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/client_node.py to client_node.cpython-310.pyc
+[0.687s] byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/service_node.py to service_node.cpython-310.pyc
+[0.687s] running install_data
+[0.687s] creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index
+[0.687s] creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index/resource_index
+[0.688s] creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index/resource_index/packages
+[0.688s] copying resource/ros2_tutorials_py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index/resource_index/packages
+[0.688s] copying package.xml -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ros2_tutorials_py
+[0.688s] creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ros2_tutorials_py/launch
+[0.688s] copying launch/talker_listerner.launch.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ros2_tutorials_py/launch/
+[0.688s] running install_egg_info
+[0.689s] Copying ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py-0.0.0-py3.10.egg-info
+[0.689s] running install_scripts
+[0.704s] Installing client_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.704s] Installing listener_client_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.705s] Installing listener_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.705s] Installing service_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.705s] Installing talker_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.705s] writing list of installed files to '/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log'
+[0.730s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '0': PYTHONPATH=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/prefix_override:/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_tutorials_py build --build-base /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build install --record /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log --single-version-externally-managed install_data

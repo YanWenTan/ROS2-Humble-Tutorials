@@ -1,0 +1,12 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 1 item                                                               [0m
+
+test/test_talker_listener.py [32m.[0m[32m                                           [100%][0m
+
+- generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+[32m============================== [32m[1m1 passed[0m[32m in 4.70s[0m[32m ===============================[0m

@@ -1,0 +1,34 @@
+[0.183s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.388s] [1m============================= test session starts ==============================[0m
+[0.388s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.391s] cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+[0.392s] rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+[0.392s] plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[0.481s] [1mcollecting ... [0m[1m
+[0.481s] collected 2 items                                                              [0m
+[0.481s] 
+[0.581s] test/test_talker_listener.py [31mF[0m[31mF[0m[31m                                          [100%][0m
+[0.581s] 
+[0.581s] =================================== FAILURES ===================================
+[0.582s] [31m[1m________________ TestTalkerListenerLink.test_listener_receives _________________[0m
+[0.582s] [1m[31m/usr/lib/python3.10/unittest/case.py[0m:59: in testPartExecutor
+[0.606s]     [94myield[39;49;00m
+[0.606s] [1m[31m/usr/lib/python3.10/unittest/case.py[0m:591: in run
+[0.606s]     [96mself[39;49;00m._callTestMethod(testMethod)
+[0.606s] [1m[31m/usr/lib/python3.10/unittest/case.py[0m:549: in _callTestMethod
+[0.606s]     method()
+[0.606s] [1m[31mE   TypeError: TestTalkerListenerLink.test_listener_receives() missing 2 required positional arguments: 'listener' and 'proc_output'[0m
+[0.606s] [31m[1m_________________ TestTalkerListenerLink.test_talker_transmits _________________[0m
+[0.606s] [1m[31m/usr/lib/python3.10/unittest/case.py[0m:59: in testPartExecutor
+[0.606s]     [94myield[39;49;00m
+[0.606s] [1m[31m/usr/lib/python3.10/unittest/case.py[0m:591: in run
+[0.606s]     [96mself[39;49;00m._callTestMethod(testMethod)
+[0.606s] [1m[31m/usr/lib/python3.10/unittest/case.py[0m:549: in _callTestMethod
+[0.606s]     method()
+[0.606s] [1m[31mE   TypeError: TestTalkerListenerLink.test_talker_transmits() missing 2 required positional arguments: 'talker' and 'proc_output'[0m
+[0.607s] - generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+[0.607s] =========================== short test summary info ============================
+[0.607s] FAILED test/test_talker_listener.py::TestTalkerListenerLink::test_listener_receives
+[0.607s] FAILED test/test_talker_listener.py::TestTalkerListenerLink::test_talker_transmits
+[0.607s] [31m============================== [31m[1m2 failed[0m[31m in 0.22s[0m[31m ===============================[0m
+[0.767s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

@@ -1,0 +1,49 @@
+UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+   Site: yanwen-IdeaPad-Gaming-3-15IHU6
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20240819-0230 - Experimental
+UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+Test project /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: lint_cmake
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':
+1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml
+1: 
+1: No problems found
+1: -- run_test.py: return code 0
+1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml'
+1/2 Test #1: lint_cmake .......................   Passed    0.11 sec
+test 2
+    Start 2: xmllint
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml"
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':
+2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml
+2: File 'package.xml' is valid
+2: 
+2: No problems found
+2: -- run_test.py: return code 0
+2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml'
+2/2 Test #2: xmllint ..........................   Passed    0.65 sec
+
+[0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 2
+
+Label Time Summary:
+lint_cmake    =   0.11 sec*proc (1 test)
+linter        =   0.76 sec*proc (2 tests)
+xmllint       =   0.65 sec*proc (1 test)
+
+Total Test time (real) =   0.76 sec

@@ -1,0 +1,25 @@
+[0.479s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTHONPATH=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/prefix_override:/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_tutorials_py build --build-base /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build install --record /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log --single-version-externally-managed install_data
+[0.635s] running egg_info
+[0.635s] writing ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/PKG-INFO
+[0.635s] writing dependency_links to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/dependency_links.txt
+[0.681s] writing entry points to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/entry_points.txt
+[0.681s] writing requirements to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/requires.txt
+[0.681s] writing top-level names to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/top_level.txt
+[0.685s] reading manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+[0.687s] writing manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+[0.687s] running build
+[0.687s] running build_py
+[0.688s] running install
+[0.688s] running install_lib
+[0.691s] running install_data
+[0.691s] running install_egg_info
+[0.693s] removing '/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py-0.0.0-py3.10.egg-info' (and everything under it)
+[0.694s] Copying ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py-0.0.0-py3.10.egg-info
+[0.695s] running install_scripts
+[0.709s] Installing client_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.710s] Installing listener_client_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.710s] Installing listener_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.710s] Installing service_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.710s] Installing talker_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+[0.710s] writing list of installed files to '/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log'
+[0.730s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '0': PYTHONPATH=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/prefix_override:/home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_tutorials_py build --build-base /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build install --record /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log --single-version-externally-managed install_data

@@ -1,0 +1,22 @@
+[0.183s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.390s] [1m============================= test session starts ==============================[0m
+[0.390s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.393s] cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+[0.393s] rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+[0.393s] plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[0.499s] [1mcollecting ... [0m[1m
+[0.499s] collected 2 items                                                              [0m
+[0.499s] 
+[0.519s] test/test_dummy.py [31mF[0m[31m                                                     [ 50%][0m
+[5.969s] test/test_talker_listener.py [32m.[0m[31m                                           [100%][0m
+[5.969s] 
+[5.969s] =================================== FAILURES ===================================
+[5.969s] [31m[1m_____________________________ TestDummy.test_dummy _____________________________[0m
+[5.969s] [1m[31mtest/test_dummy.py[0m:5: in test_dummy
+[5.996s]     [94massert[39;49;00m [94mFalse[39;49;00m
+[5.996s] [1m[31mE   AssertionError: assert False[0m
+[5.996s] - generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+[5.996s] =========================== short test summary info ============================
+[5.996s] FAILED test/test_dummy.py::TestDummy::test_dummy - AssertionError: assert False
+[5.996s] [31m========================= [31m[1m1 failed[0m, [32m1 passed[0m[31m in 5.61s[0m[31m ==========================[0m
+[6.155s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

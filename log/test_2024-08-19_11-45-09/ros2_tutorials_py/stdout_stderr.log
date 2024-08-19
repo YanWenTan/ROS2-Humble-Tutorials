@@ -1,0 +1,32 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 2 items                                                              [0m
+
+test/test_talker_listener.py [31mF[0m[31mF[0m[31m                                          [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m________________ TestTalkerListenerLink.test_listener_receives _________________[0m
+[1m[31m/usr/lib/python3.10/unittest/case.py[0m:59: in testPartExecutor
+    [94myield[39;49;00m
+[1m[31m/usr/lib/python3.10/unittest/case.py[0m:591: in run
+    [96mself[39;49;00m._callTestMethod(testMethod)
+[1m[31m/usr/lib/python3.10/unittest/case.py[0m:549: in _callTestMethod
+    method()
+[1m[31mE   TypeError: TestTalkerListenerLink.test_listener_receives() missing 2 required positional arguments: 'listener' and 'proc_output'[0m
+[31m[1m_________________ TestTalkerListenerLink.test_talker_transmits _________________[0m
+[1m[31m/usr/lib/python3.10/unittest/case.py[0m:59: in testPartExecutor
+    [94myield[39;49;00m
+[1m[31m/usr/lib/python3.10/unittest/case.py[0m:591: in run
+    [96mself[39;49;00m._callTestMethod(testMethod)
+[1m[31m/usr/lib/python3.10/unittest/case.py[0m:549: in _callTestMethod
+    method()
+[1m[31mE   TypeError: TestTalkerListenerLink.test_talker_transmits() missing 2 required positional arguments: 'talker' and 'proc_output'[0m
+- generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_talker_listener.py::TestTalkerListenerLink::test_listener_receives
+FAILED test/test_talker_listener.py::TestTalkerListenerLink::test_talker_transmits
+[31m============================== [31m[1m2 failed[0m[31m in 0.22s[0m[31m ===============================[0m

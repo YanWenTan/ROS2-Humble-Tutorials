@@ -1,0 +1,91 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 1 item                                                               [0m
+
+test/test_talker_listener.py [31mF[0m[31m                                           [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m______________________ launch tests: test_talker_listener ______________________[0m
+
+===========================================================================================================================
+FAIL: test_talker_listener.TestTalkerListenerLink.test_talker_transmits
+---------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/test_talker_listener.py", line 136, in test_talker_transmits
+    assert False
+AssertionError: assert False
+----------------------------- Captured stdout call -----------------------------
+[INFO] [launch]: All log files can be found below /home/yanwen/.ros/log/2024-08-19-11-46-59-157475-yanwen-IdeaPad-Gaming-3-15IHU6-22726
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [python3-1]: process started with pid [22758]
+[INFO] [python3-2]: process started with pid [22760]
+[python3-1] [INFO] [1724039220.348036178] [talker_node]: Publishing Hello World 0
+[python3-2] [INFO] [1724039221.236810864] [listener_Node]: Received Message: df49b3c1-4117-47c8-baa5-945773740fa0
+[python3-1] [INFO] [1724039221.339292590] [talker_node]: Publishing Hello World 1
+[python3-1] [INFO] [1724039222.339408402] [talker_node]: Publishing Hello World 2
+[python3-1] [INFO] [1724039223.339467818] [talker_node]: Publishing Hello World 3
+[INFO] [python3-2]: sending signal 'SIGINT' to process[python3-2]
+[INFO] [python3-1]: sending signal 'SIGINT' to process[python3-1]
+[python3-2] Traceback (most recent call last):
+[python3-2]   File "/home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/../ros2_tutorials_py/listener_node.py", line 47, in <module>
+[python3-2]     main()
+[python3-2]   File "/home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/../ros2_tutorials_py/listener_node.py", line 42, in main
+[python3-2]     rclpy.spin(listener_node)
+[python3-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[python3-2]     executor.spin_once()
+[python3-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[python3-2]     self._spin_once_impl(timeout_sec)
+[python3-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[python3-1] Traceback (most recent call last):
+[python3-1]   File "/home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/../ros2_tutorials_py/talker_node.py", line 69, in <module>
+[python3-1]     main()
+[python3-1]   File "/home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/../ros2_tutorials_py/talker_node.py", line 58, in main
+[python3-1]     rclpy.spin(talker_node)
+[python3-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[python3-1]     executor.spin_once()
+[python3-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[python3-2]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[python3-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[python3-2]     return next(self._cb_iter)
+[python3-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[python3-2]     wait_set.wait(timeout_nsec)
+[python3-2] KeyboardInterrupt
+[python3-1]     self._spin_once_impl(timeout_sec)
+[python3-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[python3-1]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[python3-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[python3-1]     return next(self._cb_iter)
+[python3-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+[python3-1]     wait_set.wait(timeout_nsec)
+[python3-1] KeyboardInterrupt
+[ERROR] [python3-2]: process has died [pid 22760, exit code -2, cmd '/usr/bin/python3 /home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/../ros2_tutorials_py/listener_node.py --ros-args --params-file /tmp/launch_params_dcf_xnun'].
+[ERROR] [python3-1]: process has died [pid 22758, exit code -2, cmd '/usr/bin/python3 /home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/../ros2_tutorials_py/talker_node.py --ros-args --params-file /tmp/launch_params_1l78mv0h'].
+----------------------------- Captured stderr call -----------------------------
+test_listener_receives (test_talker_listener.TestTalkerListenerLink) ... ok
+test_talker_transmits (test_talker_listener.TestTalkerListenerLink) ... FAIL
+
+======================================================================
+FAIL: test_talker_transmits (test_talker_listener.TestTalkerListenerLink)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yanwen/ros2_tutorials/src/ros2_tutorials_py/test/test_talker_listener.py", line 136, in test_talker_transmits
+    assert False
+AssertionError: assert False
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.149s
+
+FAILED (failures=1)
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+- generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_talker_listener.py::test_talker_listener - test_talker_liste...
+[31m============================== [31m[1m1 failed[0m[31m in 4.33s[0m[31m ===============================[0m

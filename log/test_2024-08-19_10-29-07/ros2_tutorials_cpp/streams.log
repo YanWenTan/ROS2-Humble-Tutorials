@@ -1,0 +1,51 @@
+[0.251s] Invoking command in '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.255s] UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+[0.255s] Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+[0.255s]    Site: yanwen-IdeaPad-Gaming-3-15IHU6
+[0.255s]    Build name: (empty)
+[0.255s]  Add coverage exclude regular expressions.
+[0.256s] Create new tag: 20240819-0229 - Experimental
+[0.256s] UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+[0.256s] Parse Config file:/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/CTestConfiguration.ini
+[0.256s] Test project /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp
+[0.256s] Constructing a list of tests
+[0.256s] Done constructing a list of tests
+[0.256s] Updating test list for fixtures
+[0.256s] Added 0 tests to meet fixture requirements
+[0.256s] Checking test dependency graph...
+[0.257s] Checking test dependency graph end
+[0.257s] test 1
+[0.257s]     Start 1: lint_cmake
+[0.257s] 
+[0.257s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml"
+[0.257s] 1: Test timeout computed to be: 60
+[0.340s] 1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':
+[0.340s] 1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml
+[0.432s] 1: 
+[0.432s] 1: No problems found
+[0.446s] 1: -- run_test.py: return code 0
+[0.446s] 1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/lint_cmake.xunit.xml'
+[0.454s] 1/2 Test #1: lint_cmake .......................   Passed    0.20 sec
+[0.454s] test 2
+[0.454s]     Start 2: xmllint
+[0.454s] 
+[0.455s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml" "--package-name" "ros2_tutorials_cpp" "--output-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml"
+[0.455s] 2: Test timeout computed to be: 60
+[0.500s] 2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_cpp':
+[0.500s] 2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml
+[2.096s] 2: File 'package.xml' is valid
+[2.096s] 2: 
+[2.096s] 2: No problems found
+[2.112s] 2: -- run_test.py: return code 0
+[2.112s] 2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp/test_results/ros2_tutorials_cpp/xmllint.xunit.xml'
+[2.120s] 2/2 Test #2: xmllint ..........................   Passed    1.67 sec
+[2.120s] 
+[2.120s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 2
+[2.120s] 
+[2.120s] Label Time Summary:
+[2.120s] lint_cmake    =   0.20 sec*proc (1 test)
+[2.120s] linter        =   1.86 sec*proc (2 tests)
+[2.120s] xmllint       =   1.67 sec*proc (1 test)
+[2.120s] 
+[2.120s] Total Test time (real) =   1.86 sec
+[2.125s] Invoked command in '/home/yanwen/ros2_tutorials/build/ros2_tutorials_cpp' returned '0': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

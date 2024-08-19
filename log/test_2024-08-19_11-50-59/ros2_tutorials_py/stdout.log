@@ -1,0 +1,20 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[1mcollecting ... [0m[1m
+collected 2 items                                                              [0m
+
+test/test_dummy.py [31mF[0m[31m                                                     [ 50%][0m
+test/test_talker_listener.py [32m.[0m[31m                                           [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_____________________________ TestDummy.test_dummy _____________________________[0m
+[1m[31mtest/test_dummy.py[0m:5: in test_dummy
+    [94massert[39;49;00m [94mFalse[39;49;00m
+[1m[31mE   AssertionError: assert False[0m
+- generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_dummy.py::TestDummy::test_dummy - AssertionError: assert False
+[31m========================= [31m[1m1 failed[0m, [32m1 passed[0m[31m in 5.61s[0m[31m ==========================[0m

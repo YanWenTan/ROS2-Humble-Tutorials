@@ -1,0 +1,53 @@
+running egg_info
+creating ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info
+writing ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/requires.txt
+writing top-level names to ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/top_level.txt
+writing manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build
+creating /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib
+creating /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+copying ros2_tutorials_py/listener_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+copying ros2_tutorials_py/talker_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+copying ros2_tutorials_py/__init__.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+copying ros2_tutorials_py/listener_client_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+copying ros2_tutorials_py/client_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+copying ros2_tutorials_py/service_node.py -> /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py
+running install
+running install_lib
+creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/listener_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/talker_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/__init__.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/listener_client_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/client_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+copying /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/build/lib/ros2_tutorials_py/service_node.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py
+byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/listener_node.py to listener_node.cpython-310.pyc
+byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/talker_node.py to talker_node.cpython-310.pyc
+byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/listener_client_node.py to listener_client_node.cpython-310.pyc
+byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/client_node.py to client_node.cpython-310.pyc
+byte-compiling /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py/service_node.py to service_node.cpython-310.pyc
+running install_data
+creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index
+creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index/resource_index
+creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index/resource_index/packages
+copying resource/ros2_tutorials_py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ros2_tutorials_py
+creating /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ros2_tutorials_py/launch
+copying launch/talker_listerner.launch.py -> /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/share/ros2_tutorials_py/launch/
+running install_egg_info
+Copying ../../build/ros2_tutorials_py/ros2_tutorials_py.egg-info to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/python3.10/site-packages/ros2_tutorials_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+Installing listener_client_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+Installing listener_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+Installing service_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+Installing talker_node script to /home/yanwen/ros2_tutorials/install/ros2_tutorials_py/lib/ros2_tutorials_py
+writing list of installed files to '/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/install.log'

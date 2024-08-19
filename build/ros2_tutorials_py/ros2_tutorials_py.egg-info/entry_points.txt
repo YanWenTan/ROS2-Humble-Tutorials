@@ -1,0 +1,7 @@
+[console_scripts]
+client_node = ros2_tutorials_py.client_node:main
+listener_client_node = ros2_tutorials_py.listener_client_node:main
+listener_node = ros2_tutorials_py.listener_node:main
+service_node = ros2_tutorials_py.service_node:main
+talker_node = ros2_tutorials_py.talker_node:main
+

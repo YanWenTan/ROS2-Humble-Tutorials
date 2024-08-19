@@ -1,0 +1,15 @@
+[0.185s] Invoking command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[0.442s] [1m============================= test session starts ==============================[0m
+[0.442s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.447s] cachedir: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache
+[0.447s] rootdir: /home/yanwen/ros2_tutorials/src/ros2_tutorials_py
+[0.447s] plugins: ament-flake8-0.12.11, launch-testing-1.0.6, ament-xmllint-0.12.11, ament-lint-0.12.11, launch-testing-ros-0.19.7, ament-copyright-0.12.11, ament-pep257-0.12.11, colcon-core-0.16.1, cov-3.0.0
+[0.561s] [1mcollecting ... [0m[1m
+[0.561s] collected 2 items                                                              [0m
+[0.561s] 
+[0.565s] test/test_dummy.py [32m.[0m[32m                                                     [ 50%][0m
+[4.899s] test/test_talker_listener.py [32m.[0m[32m                                           [100%][0m
+[4.899s] 
+[4.899s] - generated xml file: /home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml -
+[4.899s] [32m============================== [32m[1m2 passed[0m[32m in 4.46s[0m[32m ===============================[0m
+[5.060s] Invoked command in '/home/yanwen/ros2_tutorials/src/ros2_tutorials_py' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/pytest.xml --junit-prefix=ros2_tutorials_py -o cache_dir=/home/yanwen/ros2_tutorials/build/ros2_tutorials_py/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

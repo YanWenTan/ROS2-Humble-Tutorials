@@ -1,0 +1,62 @@
+[0.257s] Invoking command in '/home/yanwen/ros2_tutorials/build/custom_interfaces': CMAKE_PREFIX_PATH=/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/gazebo_ws/install/my_robot /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.261s] UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini
+[0.261s] Parse Config file:/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini
+[0.261s]    Site: yanwen-IdeaPad-Gaming-3-15IHU6
+[0.261s]    Build name: (empty)
+[0.262s]  Add coverage exclude regular expressions.
+[0.262s] Create new tag: 20240819-0229 - Experimental
+[0.262s] UpdateCTestConfiguration  from :/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini
+[0.262s] Parse Config file:/home/yanwen/ros2_tutorials/build/custom_interfaces/CTestConfiguration.ini
+[0.262s] Test project /home/yanwen/ros2_tutorials/build/custom_interfaces
+[0.262s] Constructing a list of tests
+[0.262s] Done constructing a list of tests
+[0.262s] Updating test list for fixtures
+[0.262s] Added 0 tests to meet fixture requirements
+[0.262s] Checking test dependency graph...
+[0.263s] Checking test dependency graph end
+[0.263s] test 1
+[0.263s]     Start 1: lint_cmake
+[0.263s] 
+[0.263s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml"
+[0.263s] 1: Test timeout computed to be: 60
+[0.344s] 1: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/custom_interfaces':
+[0.344s] 1:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml
+[0.436s] 1: CMakeLists.txt:18: Mismatching spaces inside () after command [whitespace/mismatch]
+[0.436s] 1: 
+[0.436s] 1: 
+[0.436s] 1: 1 errors
+[0.444s] 1: -- run_test.py: return code 1
+[0.444s] 1: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/lint_cmake.xunit.xml'
+[0.455s] 1/2 Test #1: lint_cmake .......................***Failed    0.19 sec
+[0.455s] test 2
+[0.455s]     Start 2: xmllint
+[0.455s] 
+[0.455s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml" "--package-name" "custom_interfaces" "--output-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml"
+[0.455s] 2: Test timeout computed to be: 60
+[0.502s] 2: -- run_test.py: invoking following command in '/home/yanwen/ros2_tutorials/src/custom_interfaces':
+[0.502s] 2:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml
+[2.100s] 2: File 'package.xml' is invalid:
+[2.100s] 2: /home/yanwen/ros2_tutorials/src/custom_interfaces/package.xml:16: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).
+[2.101s] 2: /home/yanwen/ros2_tutorials/src/custom_interfaces/package.xml fails to validate
+[2.101s] 2: 
+[2.101s] 2: 1 files are invalid
+[2.117s] 2: -- run_test.py: return code 1
+[2.117s] 2: -- run_test.py: verify result file '/home/yanwen/ros2_tutorials/build/custom_interfaces/test_results/custom_interfaces/xmllint.xunit.xml'
+[2.125s] 2/2 Test #2: xmllint ..........................***Failed    1.67 sec
+[2.125s] 
+[2.125s] 0% tests passed[0;0m, [0;31m2 tests failed[0;0m out of 2
+[2.125s] 
+[2.125s] Label Time Summary:
+[2.126s] lint_cmake    =   0.19 sec*proc (1 test)
+[2.126s] linter        =   1.86 sec*proc (2 tests)
+[2.126s] xmllint       =   1.67 sec*proc (1 test)
+[2.126s] 
+[2.126s] Total Test time (real) =   1.86 sec
+[2.126s] 
+[2.126s] The following tests FAILED:
+[2.126s] 	[0;31m  1 - lint_cmake (Failed)[0;0m
+[2.126s] 	[0;31m  2 - xmllint (Failed)[0;0m
+[2.126s] Errors while running CTest
+[2.126s] Output from these tests are in: /home/yanwen/ros2_tutorials/build/custom_interfaces/Testing/Temporary/LastTest.log
+[2.126s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[2.129s] Invoked command in '/home/yanwen/ros2_tutorials/build/custom_interfaces' returned '8': CMAKE_PREFIX_PATH=/home/yanwen/ros2_tutorials/install/custom_interfaces:/home/yanwen/ros2_tutorials/install/ros2_tutorials_cpp:/home/yanwen/gazebo_ws/install/my_robot /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
